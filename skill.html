@@ -4,16 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Skills Triage — Maricla Martelli Kandzorra</title>
-<meta name="description" content="Competenze triage: organizzazione e governance, modellazione finanziaria, finanza agevolata, PMO e change. Giurista di formazione tedesca, provincia di Matera, disponibile dal 1° aprile 2027.">
+<meta name="description" content="Trasformo un territorio in impresa, ed un'impresa in un futuro per tanti. Governance societaria, fattibilità economico-finanziaria, finanza agevolata. Giurista di formazione tedesca, provincia di Matera, disponibile dal 1° aprile 2027.">
 <style>
-:root{
-  --blue:#1B6EC2;--dark:#1F4E79;--band:#F4F8FC;--line:#CBD8E6;
-  --ink:#1c2630;--muted:#55636f;--faint:#8793a0;
-  --t1:#1B6EC2;--t2:#2e7d64;--t3:#8a5aa8;--t4:#78858f;--warn:#9a6414;
-}
+:root{--blue:#1B6EC2;--dark:#1F4E79;--band:#F4F8FC;--line:#CBD8E6;--ink:#1c2630;--muted:#55636f;--faint:#8793a0;
+--t1:#1B6EC2;--t2:#2e7d64;--t3:#8a5aa8;--t4:#78858f}
 *{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--ink);
-  font:16px/1.6 "Lato","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 "Lato","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif}
 .wrap{max-width:1060px;margin:0 auto;padding:0 22px}
 header{border-bottom:3px solid var(--dark);background:var(--band)}
 .hd{padding:30px 0 24px;position:relative}
@@ -22,22 +18,34 @@ h1{margin:0;font-size:1.9rem;line-height:1.15;font-weight:700;color:var(--blue)}
 .meta{margin:13px 0 0;font-size:.89rem;color:var(--muted)}
 .meta b{color:var(--ink)}
 .links{margin:17px 0 0;display:flex;flex-wrap:wrap;gap:9px}
-.links a{display:inline-block;padding:7px 14px;border:1px solid var(--blue);border-radius:3px;
-  color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600;background:#fff}
+.links a{display:inline-block;padding:7px 14px;border:1px solid var(--blue);border-radius:3px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600;background:#fff}
 .links a.primary{background:var(--blue);color:#fff}
 .lang{position:absolute;top:30px;right:22px;display:flex;border:1px solid var(--blue);border-radius:3px;overflow:hidden}
-.lang button{font:inherit;font-size:.8rem;font-weight:700;padding:5px 12px;border:0;background:#fff;color:var(--blue);cursor:pointer}
+.lang button{font:inherit;font-size:.8rem;font-weight:700;padding:5px 11px;border:0;border-left:1px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer}
+.lang button:first-child{border-left:0}
 .lang button[aria-pressed="true"]{background:var(--blue);color:#fff}
-.intro{padding:28px 0 4px;max-width:74ch}
-.intro p{margin:0 0 12px}
-.intro .big{font-size:1.05rem;color:var(--dark)}
-.filter{margin:24px 0 8px;padding:17px 19px;background:var(--band);border:1px solid var(--line);border-radius:4px}
-.filter h2{margin:0 0 4px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dark);font-weight:700}
+.headline{padding:34px 0 0;max-width:80ch}
+.headline .kicker{margin:0 0 6px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--t2);font-weight:700}
+.headline h2{margin:0;font-size:1.72rem;line-height:1.2;font-weight:700;color:var(--dark);letter-spacing:-.2px}
+.headline .sub{margin:12px 0 0;font-size:1.03rem;color:var(--muted)}
+.defn{margin:26px 0 0;padding:17px 20px;border-left:3px solid var(--t2);background:#f3f8f6;border-radius:0 4px 4px 0;max-width:80ch}
+.defn b{color:var(--dark)}
+.defn p{margin:0;font-size:.93rem;color:var(--muted)}
+.story{margin:30px 0 0;max-width:72ch}
+.story h3{margin:0 0 12px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dark);font-weight:700}
+.story p{margin:0 0 13px;font-size:.97rem}
+.story .close{margin-top:16px;padding-top:14px;border-top:1px solid var(--line);font-size:1.02rem;color:var(--dark)}
+.guide{margin:26px 0 0;padding:17px 20px;background:var(--band);border:1px solid var(--line);border-radius:4px;max-width:80ch}
+.guide h3{margin:0 0 8px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dark);font-weight:700}
+.guide p{margin:0;font-size:.89rem;color:var(--muted)}
+.filter{margin:26px 0 8px;padding:17px 19px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.filter h3{margin:0 0 4px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dark);font-weight:700}
 .filter p{margin:0 0 12px;font-size:.85rem;color:var(--muted)}
 .chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip{font:inherit;font-size:.84rem;font-weight:600;cursor:pointer;padding:7px 13px;
-  border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--dark)}
+.chip{font:inherit;font-size:.84rem;font-weight:600;cursor:pointer;padding:7px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--dark)}
 .chip[aria-pressed="true"]{background:var(--dark);border-color:var(--dark);color:#fff}
+#reset{border-style:dashed;color:var(--t2);border-color:#bcd7cc}
+#reset[disabled]{opacity:.4;cursor:default;color:var(--faint);border-color:var(--line)}
 .note{margin:11px 0 0;font-size:.79rem;color:var(--faint)}
 section{padding:32px 0 4px;border-top:1px solid var(--line);margin-top:32px}
 .shead{display:flex;align-items:baseline;gap:11px;flex-wrap:wrap}
@@ -54,25 +62,18 @@ h2.st{margin:0;font-size:1.1rem;font-weight:700;color:var(--dark)}
 .grid li{padding:7px 0;border-bottom:1px solid #eef2f6}
 .grid .n{font-size:.9rem;font-weight:600;display:block}
 .grid .e{font-size:.78rem;color:var(--faint);display:block}
-.s2 .grid .n{color:var(--t2)}.s3 .grid .n{color:var(--t3)}.s4 .grid .n{color:var(--t4)}
+.s2 .grid .n{color:var(--t2)}.s3 .grid .n{color:var(--t3)}
 .flat{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 0;padding:0;list-style:none}
 .flat li{font-size:.84rem;color:var(--t4);border:1px solid var(--line);border-radius:999px;padding:5px 12px}
 .dim{opacity:.2}
-.gap{margin:32px 0 0;padding:20px 22px;background:#fdf8ef;border:1px solid #e8d9bd;border-radius:4px}
-.gap h2{margin:0 0 6px;font-size:1rem;color:var(--warn);font-weight:700}
-.gap>p{margin:0 0 13px;font-size:.87rem;color:var(--muted);max-width:76ch}
-.gap ul{margin:0;padding-left:19px}
-.gap li{font-size:.865rem;color:var(--muted);margin-bottom:8px}
-.gap b{color:var(--ink)}
 .langs{display:flex;flex-wrap:wrap;gap:11px;margin:18px 0 0;padding:0;list-style:none}
-.langs li{border:1px solid var(--line);border-radius:3px;padding:10px 16px;min-width:148px;background:var(--band)}
+.langs li{border:1px solid var(--line);border-radius:3px;padding:10px 16px;min-width:150px;background:var(--band)}
 .langs b{display:block;font-size:.96rem;color:var(--dark)}
 .langs span{font-size:.81rem;color:var(--muted)}
 .precision{margin:34px 0 0;padding:21px 23px;background:var(--band);border:1px solid var(--line);border-radius:4px}
-.precision h2{margin:0 0 6px;font-size:1rem;color:var(--dark);font-weight:700}
-.precision>p{margin:0 0 15px;font-size:.87rem;color:var(--muted);max-width:76ch}
-.pgroup{margin:0 0 22px}
-.pgroup:last-child{margin-bottom:0}
+.precision>h2{margin:0 0 6px;font-size:1rem;color:var(--dark);font-weight:700}
+.precision>p{margin:0 0 17px;font-size:.87rem;color:var(--muted);max-width:76ch}
+.pgroup{margin:0 0 22px}.pgroup:last-child{margin-bottom:0}
 .pgroup h3{margin:0 0 11px;font-size:.76rem;letter-spacing:.09em;text-transform:uppercase;color:var(--dark);font-weight:700;border-bottom:1px solid var(--line);padding-bottom:6px}
 .precision dl{margin:0;display:grid;grid-template-columns:1fr;gap:15px 28px}
 .pair{border-left:2px solid var(--line);padding-left:13px}
@@ -89,14 +90,12 @@ footer a{color:var(--blue)}
 <body>
 
 <header><div class="wrap hd">
-  <div class="lang">
-    <button id="bIT" aria-pressed="true">IT</button><button id="bEN" aria-pressed="false">EN</button>
-  </div>
+  <div class="lang"><button id="bIT" aria-pressed="true">IT</button><button id="bEN" aria-pressed="false">EN</button><button id="bDE" aria-pressed="false">DE</button></div>
   <h1>Maricla Martelli Kandzorra</h1>
-  <p class="role" data-en="Skills Triage — Organisational design, governance, financial feasibility and public incentives">Skills Triage — Disegno organizzativo, governance, fattibilità economico-finanziaria e finanza agevolata</p>
-  <p class="meta" data-en="German-trained <b>giurista</b> · Native German and Italian, English C1 · Resident in the province of <b>Matera</b> · Available from <b>1 April 2027</b>">Giurista di formazione tedesca · Madrelingua tedesca e italiana, inglese C1 · Residenza in provincia di <b>Matera</b> · Disponibile dal <b>1° aprile 2027</b></p>
+  <p class="role" data-en="Corporate governance · Financial feasibility · Public funding" data-de="Corporate Governance · Wirtschaftliche Machbarkeit · Fördermittel">Governance societaria · Fattibilità economico-finanziaria · Finanza agevolata</p>
+  <p class="meta" data-en="German-trained giurista · Native German and Italian, English C1 · Resident in the province of <b>Matera</b> · Available from <b>1 April 2027</b>" data-de="Juristin deutscher Ausbildung · Deutsch und Italienisch Muttersprache, Englisch C1 · Wohnsitz in der Provinz <b>Matera</b> · Verfügbar ab <b>1. April 2027</b>">Giurista di formazione tedesca · Madrelingua tedesca e italiana, inglese C1 · Residenza in provincia di <b>Matera</b> · Disponibile dal <b>1° aprile 2027</b></p>
   <p class="links">
-    <a class="primary" href="https://maximamaximum.github.io/maricla-martelli-kandzorra.github.io/" data-en="Curriculum vitae">Curriculum vitae</a>
+    <a class="primary" href="https://maximamaximum.github.io/maricla-martelli-kandzorra.github.io/">Curriculum vitae</a>
     <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">LinkedIn</a>
     <a href="mailto:maricla@mboss.us">maricla@mboss.us</a>
   </p>
@@ -104,292 +103,269 @@ footer a{color:var(--blue)}
 
 <div class="wrap">
 
-<div class="intro">
-  <p class="big" data-en="This is not a list of everything I can do. It is a judgement about what matters most.">Questo non è l'elenco di tutto ciò che so fare. È un giudizio su ciò che conta di più.</p>
-  <p data-en="A long inventory of skills tells an employer very little, because it gives the same weight to a financial model built this year and to a course completed fifteen years ago. This page sorts the same material into four tiers and states the evidence behind each entry.">Un elenco lungo di competenze dice poco a un datore di lavoro, perché dà lo stesso peso a un modello finanziario costruito quest'anno e a un corso concluso quindici anni fa. Questa pagina ordina lo stesso materiale su quattro livelli e indica l'evidenza che sta dietro a ciascuna voce.</p>
-  <p data-en="The organising thread is short enough for one sentence: <b>I investigate a complex business problem, connect its legal and financial dimensions, design a structure, and build or document the proposed solution.</b> The 2026 feasibility analysis for a multi-site hospitality group in Basilicata is its clearest single expression — a complete engagement: diagnosis, target design, quantified plan, and the decision to change course when the numbers said so.">Il filo conduttore sta in una frase: <b>analizzo un problema aziendale complesso, ne collego le dimensioni giuridiche e finanziarie, progetto una struttura e costruisco o documento la soluzione proposta.</b> L'analisi di fattibilità 2026 per un gruppo ricettivo multi-sito in Basilicata ne è l'espressione più chiara — un incarico completo: diagnosi, disegno del modello obiettivo, piano quantificato e la decisione di cambiare rotta quando i numeri l'hanno imposto.</p>
+<div class="headline">
+  <p class="kicker" data-en="Skills Triage" data-de="Skills Triage">Skills Triage</p>
+  <h2 data-en="I turn a territory into an enterprise, and an enterprise into a future for many" data-de="Ich mache aus einer Region ein Unternehmen — und aus dem Unternehmen eine Zukunft für viele">Trasformo un territorio in impresa, ed un'impresa in un futuro per tanti</h2>
+  <p class="sub" data-en="The law gives the structure its shape, the numbers measure what it can carry, the territory gives it somewhere to stand, and the hands build it. Four trades that together carry an idea to the point where someone puts capital into it and someone else finds work in it." data-de="Das Recht gibt der Struktur ihre Form, die Zahlen messen, was sie trägt, die Region gibt ihr einen Ort, und die Hände bauen sie. Vier Berufe, die zusammen eine Idee bis zu dem Punkt bringen, an dem jemand Kapital hineingibt und jemand anderes Arbeit darin findet.">Il diritto dà forma alla struttura, i numeri ne misurano la tenuta, il territorio le dà un posto dove stare, e le mani la costruiscono. Quattro mestieri che insieme portano un'idea fino al punto in cui qualcuno ci mette il capitale e qualcun altro ci trova un lavoro.</p>
+</div>
+
+<div class="defn"><p data-en="<b>Skill</b>, on this page, means one precise thing: work done, the result it produced, and the date it happened. Every entry carries its evidence beside it — a project, an examination, a figure, a document." data-de="<b>Kompetenz</b> bedeutet auf dieser Seite genau eines: geleistete Arbeit, das Ergebnis, das sie erbracht hat, und das Datum, an dem es geschah. Jeder Eintrag trägt seinen Beleg bei sich — ein Projekt, eine Prüfung, eine Zahl, ein Dokument."><b>Competenza</b>, su questa pagina, significa una cosa precisa: un lavoro svolto, il risultato che ha prodotto e la data in cui è successo. Ogni voce porta accanto la propria prova — un progetto, un esame, una cifra, un documento.</p></div>
+
+<div class="story">
+  <h3 data-en="The story that holds the data together" data-de="Die Geschichte, die die Daten zusammenhält">La storia che tiene insieme i dati</h3>
+  <div id="story"><p>Comincia su un floor di borsa. Francoforte, 2001: ordini istituzionali su titoli di Stato, nozionali da cinque a cinquecento milioni, e un desk di Londra all'altro capo del telefono ogni giorno per cinque anni e mezzo. Lì si impara una cosa sola, e a fondo: un numero vale quanto la verifica che lo regge.</p>
+<p>Poi il diritto, dalla parte di chi le operazioni le costruisce. <b>Allen &amp; Overy</b> a Francoforte, 2004: IPO, aumenti di capitale, obbligazioni convertibili — il mercato primario. <b>HypoVereinsbank</b>: project finance. <b>DLA Piper</b>: project finance e vigilanza bancaria. Quattro operatori, la stessa catena vista da ogni lato. In mezzo il Primo Esame di Stato, il tirocinio alla Corte d'Appello di Francoforte e la specializzazione tributaria, superata al primo tentativo su casi da risolvere.</p>
+<p>Poi la prova di saperle costruire, le cose. <b>MBOSS.US e.K.</b>: 400 prodotti disegnati, un sito e-commerce intero, fornitori scelti e negoziati, materiali certificati e tracciati, strumenti digitali scritti in proprio — fino a un server MCP costruito in quattro settimane.</p>
+<p>Nel <b>2026</b> tutto questo converge su un unico incarico. Un gruppo ricettivo multi-sito in Basilicata: una holding con otto società operative, un modello a dieci anni con IRR, multipli di uscita e analisi di sensitività. Il dimensionamento mostra quanta struttura fissa il progetto regge davvero, e il perimetro viene ricostruito di conseguenza. L'agevolazione ZES Unica viene verificata alla fonte, e l'impatto previsto rettificato di circa tre milioni mentre il documento è ancora in lavorazione.</p>
+<p class="close">Diagnosi, disegno, piano quantificato, correzione di rotta: <b>l'arco completo, su un caso, documentato.</b> È questo che porto dentro un team di consulenza.</p></div>
+</div>
+
+<div class="guide">
+  <h3 data-en="How to read this page" data-de="Wie Sie diese Seite lesen">Come leggere questa pagina</h3>
+  <p data-en="Four tiers, from the work I do today to the foundation it rests on: <b>Tier 1</b> what I am hired for, <b>Tier 2</b> how that work gets done, <b>Tier 3</b> the evidence that I build, <b>Tier 4</b> the legal and markets training that carries the rest. Above them, five filters by role family: choose the one you are hiring for and the page reorders around you." data-de="Vier Ebenen, von der heutigen Arbeit bis zum Fundament darunter: <b>Ebene 1</b> wofür man mich einstellt, <b>Ebene 2</b> wie diese Arbeit entsteht, <b>Ebene 3</b> der Beleg, dass ich baue, <b>Ebene 4</b> die juristische und Marktausbildung, die das Übrige trägt. Darüber fünf Filter nach Rollenfamilie: Wählen Sie die, für die Sie einstellen, und die Seite ordnet sich um Sie herum.">Quattro livelli, dal lavoro che faccio oggi al fondamento su cui poggia: <b>Livello 1</b> ciò per cui mi si assume, <b>Livello 2</b> come quel lavoro si realizza, <b>Livello 3</b> la prova che costruisco, <b>Livello 4</b> la formazione giuridica e di mercato che sorregge il resto. Sopra, cinque filtri per famiglia di ruolo: scelga quello per cui assume e la pagina si riordina intorno a lei.</p>
 </div>
 
 <div class="filter">
-  <h2 data-en="Filter by role family">Filtra per famiglia di ruolo</h2>
-  <p data-en="The five role families I am targeting. Select one: the skills that serve it stay sharp, the others fade but stay visible — nothing here is hidden from you.">Le cinque famiglie di ruolo a cui mi candido. Selezionane una: le competenze che la servono restano in evidenza, le altre sfumano ma restano visibili — qui non le nascondo.</p>
+  <h3 data-en="Filter by role family" data-de="Nach Rollenfamilie filtern">Filtra per famiglia di ruolo</h3>
+  <p data-en="The five role families I am targeting." data-de="Die fünf Rollenfamilien, auf die ich ziele.">Le cinque famiglie di ruolo a cui mi candido.</p>
   <div class="chips" id="chips">
-    <button class="chip" aria-pressed="false" data-t="od" data-en="Organisation Design &amp; governance">Organization Design e governance</button>
-    <button class="chip" aria-pressed="false" data-t="pmo" data-en="PMO &amp; digital transformation">PMO e trasformazione digitale</button>
-    <button class="chip" aria-pressed="false" data-t="change" data-en="Change management &amp; adoption">Change management e adoption</button>
-    <button class="chip" aria-pressed="false" data-t="fin" data-en="Public funding, grants &amp; tenders">Finanza agevolata, bandi e gare</button>
-    <button class="chip" aria-pressed="false" data-t="pmi" data-en="Strategy consulting — SMEs &amp; public sector">Consulenza strategica PMI e PA</button>
-    <button class="chip" aria-pressed="true" data-t="all" id="reset" data-en="Show all">Mostra tutto</button>
+    <button class="chip" aria-pressed="false" data-t="od" data-en="Organisation Design &amp;amp; governance" data-de="Organisationsdesign &amp;amp; Governance">Organization Design e governance</button>
+    <button class="chip" aria-pressed="false" data-t="pmo" data-en="PMO &amp;amp; digital transformation" data-de="PMO &amp;amp; digitale Transformation">PMO e trasformazione digitale</button>
+    <button class="chip" aria-pressed="false" data-t="change" data-en="Change management &amp;amp; adoption" data-de="Change Management &amp;amp; Adoption">Change management e adoption</button>
+    <button class="chip" aria-pressed="false" data-t="fin" data-en="Public funding, grants &amp;amp; tenders" data-de="Fördermittel, Anträge &amp;amp; Ausschreibungen">Finanza agevolata, bandi e gare</button>
+    <button class="chip" aria-pressed="false" data-t="pmi" data-en="Strategy consulting — SMEs &amp;amp; public sector" data-de="Strategieberatung — KMU &amp;amp; öffentlicher Sektor">Consulenza strategica PMI e PA</button>
+    <button class="chip" id="reset" disabled data-en="Clear the filters" data-de="Filter zurücksetzen">Azzera i filtri</button>
   </div>
-  <p class="note" data-en="Several can be combined. The filter changes the emphasis of the page, never its content.">Si possono combinare. Il filtro cambia l'enfasi della pagina, mai il suo contenuto.</p>
+  <p class="note" data-en="They can be combined. The filter changes the emphasis of the page; every skill stays visible." data-de="Sie lassen sich kombinieren. Der Filter ändert die Gewichtung der Seite; jede Kompetenz bleibt sichtbar.">Si possono combinare. Il filtro cambia l'enfasi della pagina; ogni competenza resta visibile.</p>
 </div>
 
-<!-- TIER 1 -->
 <section class="s1" id="t1">
-  <div class="shead">
-    <h2 class="st" data-en="Lead capabilities">Competenze principali</h2>
-    <span class="tag" data-en="Tier 1 — what I am hired for">Livello 1 — ciò per cui mi si assume</span>
-    <span class="hitcount" data-count="t1"></span>
-  </div>
-  <p class="sdesc" data-en="Each is carried by recent, documented work, described in the vocabulary the postings themselves use. These are the skills I expect to be examined on, and a work sample exists for them.">Ciascuna è sostenuta da lavoro recente e documentato, descritta con il vocabolario usato dagli annunci stessi. Sono le competenze su cui mi aspetto di essere esaminata, e per cui esiste un campione di lavoro.</p>
+  <div class="shead"><h2 class="st" data-en="Lead capabilities" data-de="Kernkompetenzen">Competenze principali</h2> <span class="tag" data-en="Tier 1 — what I am hired for" data-de="Ebene 1 — wofür man mich einstellt">Livello 1 — ciò per cui mi si assume</span> <span class="hitcount" data-count="t1"></span></div>
+  <p class="sdesc" data-en="Each is carried by recent, documented work, described in the vocabulary the postings themselves use. These are the skills I expect to be examined on, and a work sample exists for them." data-de="Jede beruht auf aktueller, dokumentierter Arbeit und ist in der Sprache der Ausschreibungen selbst beschrieben. Auf diese Kompetenzen erwarte ich geprüft zu werden, und für sie liegt eine Arbeitsprobe vor.">Ciascuna è sostenuta da lavoro recente e documentato, descritta con il vocabolario usato dagli annunci stessi. Sono le competenze su cui mi aspetto di essere esaminata, e per cui esiste un campione di lavoro.</p>
   <div class="cards">
-
-    <article class="card" data-tracks="od pmi">
-      <h3 data-en="Design of organisational and governance models">Disegno di modelli organizzativi e di governance</h3>
-      <p data-en="A holding with eight operating companies, each an S.a.s. with an S.r.l. as sole general partner, designed so every entity could apply independently to the funding instrument matched to its activity.">Una holding con otto società operative, ciascuna S.a.s. con una S.r.l. come unico socio accomandatario, progettata perché ogni entità potesse accedere autonomamente allo strumento agevolativo adatto alla propria attività.</p>
-    </article>
-
-    <article class="card" data-tracks="od pmi">
-      <h3 data-en="Quali-quantitative sizing and rightsizing">Analisi quali-quantitativa del dimensionamento e rightsizing</h3>
-      <p data-en="The ten-year model showed that thirteen sellable units could not carry the planned fixed estate. The scope was rebuilt: high-fixed-cost facilities removed, the coastal site reconfigured as public infrastructure under partnership. Rightsizing done on the numbers and reversed on the findings.">Il modello a dieci anni ha mostrato che tredici unità vendibili non reggevano la struttura fissa prevista. Il perimetro è stato ricostruito: rimosse le strutture ad alto costo fisso, il sito costiero riconfigurato come infrastruttura pubblica in partenariato. Rightsizing fatto sui numeri e invertito sulle evidenze.</p>
-    </article>
-
-    <article class="card" data-tracks="od">
-      <h3 data-en="Evolution of operating models">Evoluzione dei modelli operativi e di funzionamento</h3>
-      <p data-en="Costs and incentives allocated per entity, intercompany transfer pricing analysed, with a conversion to S.a.p.a. planned over five to ten years.">Costi e incentivi allocati per entità, transfer pricing intercompany analizzato, con conversione a S.a.p.a. pianificata su cinque-dieci anni.</p>
-    </article>
-
-    <article class="card" data-tracks="pmo fin pmi">
-      <h3 data-en="Financial modelling and cost case">Modellazione finanziaria e business case</h3>
-      <p data-en="Ten-year cash-flow model with IRR, exit multiples and sensitivity analysis across build cost, fixed cost, occupancy and average rate.">Modello a dieci anni dei flussi di cassa con IRR, multipli di uscita e analisi di sensitività su costo di costruzione, costi fissi, occupazione e tariffa media.</p>
-    </article>
-
-    <article class="card" data-tracks="pmo pmi">
-      <h3 data-en="Roadmap and prioritisation with forecast economic impact">Roadmap e prioritizzazione con impatto economico</h3>
-      <p data-en="Two-stage build option quantified separately: Year 0 capex reduced from €23.0M to €19.3M by deferring €3.7M to Years 2–3, self-funded from operating revenue.">Opzione di costruzione in due fasi quantificata separatamente: capex dell'Anno 0 ridotto da €23,0M a €19,3M differendo €3,7M agli Anni 2–3, autofinanziati dai ricavi operativi.</p>
-    </article>
-
-    <article class="card" data-tracks="fin pmi change">
-      <h3 data-en="Public incentives and source verification">Finanza agevolata e verifica alla fonte</h3>
-      <p data-en="ZES Unica verified at source — actual utilisation percentage rather than the headline rate — revising the projected benefit by roughly €3M before it reached an investor. Mapping of Italian and EU incentive instruments across eight entities.">Agevolazione ZES Unica verificata alla fonte — percentuale di fruizione effettiva anziché aliquota nominale — rettificando l'impatto previsto di circa €3M prima che arrivasse a un investitore. Mappatura degli strumenti agevolativi nazionali ed europei su otto entità.</p>
-    </article>
-
-    <article class="card" data-tracks="pmo fin">
-      <h3 data-en="Identifying and managing project risks">Identificazione e gestione dei rischi di progetto</h3>
-      <p data-en="Documented and quantified: proportional allocation risk on the ZES Unica credit; a 13-month lag between completion and receipt creating a €3.31M peak cash need; a land lease expiring at the Year 10 exit.">Documentati e quantificati: rischio di allocazione proporzionale sul credito ZES Unica; sfasamento di 13 mesi fra completamento e incasso, con picco di fabbisogno di €3,31M; contratto di locazione in scadenza all'uscita dell'Anno 10.</p>
-    </article>
-
-    <article class="card" data-tracks="pmo change pmi">
-      <h3 data-en="As-is assessment and to-be model">Assessment as-is e definizione del modello to-be</h3>
-      <p data-en="Current-state and future-state method, now being applied with value stream mapping. Requirements gathered and formalised before the target process was defined.">Metodo current-state e future-state, oggi applicato con value stream mapping. Requisiti raccolti e formalizzati prima della definizione del processo target.</p>
-    </article>
-
-    <article class="card" data-tracks="od pmo pmi">
-      <h3 data-en="Analysis and reengineering of processes">Analisi e reingegnerizzazione dei processi</h3>
-      <p data-en="The incentive process rebuilt after verifying utilisation at source. End-to-end commercial, supplier and technical processes designed and operated at MBOSS.US e.K.">Processo degli incentivi ricostruito dopo la verifica della fruizione alla fonte. Processi commerciali, di fornitura e tecnici progettati e gestiti end-to-end in MBOSS.US e.K.</p>
-    </article>
-
-    <article class="card" data-tracks="od pmo pmi">
-      <h3 data-en="Managing multiple stakeholders, internal and external">Gestione di stakeholder multipli, interni ed esterni</h3>
-      <p data-en="Three sites, eight operating companies, two municipalities, the Regione Basilicata, landowning families and a public-private partnership structure. Earlier: primary contact for London traders during exchange fixing.">Tre siti, otto società operative, due Comuni, la Regione Basilicata, famiglie proprietarie dei terreni e una struttura di partenariato pubblico-privato. In precedenza: referente diretta dei trader di Londra durante il fixing di borsa.</p>
-    </article>
-
-    <article class="card" data-tracks="change pmo">
-      <h3 data-en="Design thinking, Lean Startup and Jobs-to-Be-Done">Design thinking, Lean Startup e Jobs-to-Be-Done</h3>
-      <p data-en="The platform pivot run as customer development. Qualitative analysis gathered locally and integrated with quantitative modelling rather than taken from published averages.">Il pivot della piattaforma condotto come customer development. Analisi qualitative raccolte sul territorio e integrate con la modellazione quantitativa, non desunte da medie pubblicate.</p>
-    </article>
-
-    <article class="card" data-tracks="change fin">
-      <h3 data-en="Spotting problems early and escalating them">Individuare precocemente le criticità e segnalarle</h3>
-      <p data-en="The incentive verification is the clearest instance: a headline assumption that would have overstated the case by roughly €3M was caught, corrected and reported before the document left the room.">La verifica dell'agevolazione ne è l'esempio più netto: un'assunzione nominale che avrebbe sovrastimato il caso di circa €3M è stata individuata, corretta e segnalata prima che il documento uscisse.</p>
-    </article>
-
-    <article class="card" data-tracks="fin pmo">
-      <h3 data-en="Business development: tenders, proposals, points of view">Business development: gare, proposte commerciali e POV</h3>
-      <p data-en="Pitch deck, bilingual business plan and grants research produced. An application against a public call is a tender response in all but name.">Pitch deck, business plan bilingue e ricerca bandi prodotti. Una domanda a valere su un bando pubblico è una risposta a gara in tutto tranne che nel nome.</p>
-    </article>
-
-    <article class="card" data-tracks="od pmo pmi">
-      <h3 data-en="Familiarity with AI tools and automation">Familiarità con i tool di AI e automazione</h3>
-      <p data-en="Two AI-platform entities inside the proposed structure. An MCP server designed and built in four weeks, converting Shopify storefront designs into W3C DTCG design tokens for Figma.">Due entità di piattaforma AI all'interno della struttura proposta. Un server MCP progettato e costruito in quattro settimane, che converte i design dello storefront Shopify in design token W3C DTCG per Figma.</p>
-    </article>
-
-    <article class="card" data-tracks="od pmi">
-      <h3 data-en="English gained through study and work abroad">Inglese maturato con studio e lavoro all'estero</h3>
-      <p data-en="Academic year at Università Cattolica, Milan; Business English programme in Honolulu; negotiation with UK manufacturers; a London trading desk every day for five and a half years. Investor-standard documentation produced in Italian, English and German.">Anno accademico all'Università Cattolica di Milano; programma di Business English a Honolulu; negoziazione con produttori britannici; un desk di Londra ogni giorno per cinque anni e mezzo. Documentazione a standard investitori prodotta in italiano, inglese e tedesco.</p>
-    </article>
-
+      <article class="card" data-tracks="od pmi">
+        <h3 data-en="Design of organisational and governance models" data-de="Entwurf von Organisations- und Governance-Modellen">Disegno di modelli organizzativi e di governance</h3>
+        <p data-en="A holding with eight operating companies, each an S.a.s. with an S.r.l. as sole general partner, designed so that every entity can apply independently for the funding instrument matched to its activity." data-de="Eine Holding mit acht operativen Gesellschaften, jede als S.a.s. mit einer S.r.l. als alleiniger Komplementärin, so entworfen, dass jede Einheit eigenständig das zu ihrer Tätigkeit passende Förderinstrument beantragen kann.">Una holding con otto società operative, ciascuna S.a.s. con una S.r.l. come unico socio accomandatario, progettata perché ogni entità acceda autonomamente allo strumento agevolativo adatto alla propria attività.</p>
+      </article>
+      <article class="card" data-tracks="od pmi">
+        <h3 data-en="Quali-quantitative sizing and rightsizing" data-de="Quali-quantitative Dimensionierung und Rightsizing">Analisi quali-quantitativa del dimensionamento e rightsizing</h3>
+        <p data-en="The ten-year model showed how much fixed estate the project could carry: the scope was rebuilt accordingly, with the coastal site reconfigured as public infrastructure under partnership. Rightsizing done on the numbers and corrected on the findings." data-de="Das Zehnjahresmodell zeigte, wie viel Fixkostenstruktur das Projekt tragen konnte: Der Umfang wurde entsprechend neu gebaut, der Küstenstandort als öffentliche Infrastruktur in Partnerschaft neu konfiguriert. Rightsizing auf Basis der Zahlen, korrigiert anhand der Befunde.">Il modello a dieci anni ha mostrato quanto la struttura fissa prevista potesse reggere: il perimetro è stato ricostruito di conseguenza, con il sito costiero riconfigurato come infrastruttura pubblica in partenariato. Rightsizing fatto sui numeri e corretto sulle evidenze.</p>
+      </article>
+      <article class="card" data-tracks="od">
+        <h3 data-en="Evolution of operating models" data-de="Weiterentwicklung der Betriebs- und Funktionsmodelle">Evoluzione dei modelli operativi e di funzionamento</h3>
+        <p data-en="Costs and incentives allocated per entity, intercompany transfer pricing analysed, with a conversion to S.a.p.a. planned over five to ten years." data-de="Kosten und Förderungen je Einheit zugeordnet, konzerninterne Verrechnungspreise analysiert, mit geplanter Umwandlung in eine S.a.p.a. über fünf bis zehn Jahre.">Costi e incentivi allocati per entità, transfer pricing intercompany analizzato, con conversione a S.a.p.a. pianificata su cinque-dieci anni.</p>
+      </article>
+      <article class="card" data-tracks="pmo fin pmi">
+        <h3 data-en="Financial modelling and cost case" data-de="Finanzmodellierung und Business Case">Modellazione finanziaria e business case</h3>
+        <p data-en="Ten-year cash-flow model with IRR, exit multiples and sensitivity analysis across build cost, fixed cost, occupancy and average rate." data-de="Zehnjähriges Cashflow-Modell mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse über Baukosten, Fixkosten, Auslastung und Durchschnittsrate.">Modello a dieci anni dei flussi di cassa con IRR, multipli di uscita e analisi di sensitività su costo di costruzione, costi fissi, occupazione e tariffa media.</p>
+      </article>
+      <article class="card" data-tracks="pmo pmi">
+        <h3 data-en="Roadmap and prioritisation with forecast economic impact" data-de="Roadmap und Priorisierung mit wirtschaftlicher Wirkung">Roadmap e prioritizzazione con impatto economico</h3>
+        <p data-en="Two-stage build option quantified separately: Year 0 capex taken from €23.0M to €19.3M by deferring €3.7M to Years 2–3, self-funded from operating revenue." data-de="Zweistufige Bauoption gesondert quantifiziert: Capex im Jahr 0 von 23,0 Mio. € auf 19,3 Mio. € gesenkt, indem 3,7 Mio. € auf die Jahre 2–3 verschoben und aus dem operativen Umsatz finanziert wurden.">Opzione di costruzione in due fasi quantificata separatamente: capex dell'Anno 0 portato da €23,0M a €19,3M differendo €3,7M agli Anni 2–3, autofinanziati dai ricavi operativi.</p>
+      </article>
+      <article class="card" data-tracks="fin pmi change">
+        <h3 data-en="Public incentives and source verification" data-de="Fördermittel und Prüfung an der Quelle">Finanza agevolata e verifica alla fonte</h3>
+        <p data-en="The ZES Unica incentive verified at source — actual utilisation percentage — revising the projected benefit by roughly €3M before it reached an investor. Mapping of Italian and EU incentive instruments across eight entities." data-de="Die Förderung ZES Unica an der Quelle geprüft — tatsächlicher Inanspruchnahmesatz — und die prognostizierte Wirkung um rund 3 Mio. € korrigiert, bevor sie einen Investor erreichte. Kartierung der italienischen und EU-Förderinstrumente über acht Einheiten.">Agevolazione ZES Unica verificata alla fonte — percentuale di fruizione effettiva — con rettifica dell'impatto previsto di circa €3M prima che arrivasse a un investitore. Mappatura degli strumenti agevolativi nazionali ed europei su otto entità.</p>
+      </article>
+      <article class="card" data-tracks="pmo fin">
+        <h3 data-en="Identifying and managing project risks" data-de="Erkennen und Steuern von Projektrisiken">Identificazione e gestione dei rischi di progetto</h3>
+        <p data-en="Documented and quantified: proportional allocation risk on the ZES Unica credit; a 13-month lag between completion and receipt, creating a €3.31M peak cash need; a land lease expiring at the Year 10 exit." data-de="Dokumentiert und quantifiziert: Risiko der anteiligen Zuteilung beim ZES-Unica-Guthaben; 13 Monate Verzug zwischen Fertigstellung und Zufluss mit einem Spitzenbedarf von 3,31 Mio. €; ein Pachtvertrag, der zum Exit im Jahr 10 ausläuft.">Documentati e quantificati: rischio di allocazione proporzionale sul credito ZES Unica; sfasamento di 13 mesi fra completamento e incasso, con picco di fabbisogno di €3,31M; contratto di locazione in scadenza all'uscita dell'Anno 10.</p>
+      </article>
+      <article class="card" data-tracks="pmo change pmi">
+        <h3 data-en="As-is assessment and to-be model" data-de="As-is-Analyse und Definition des To-be-Modells">Assessment as-is e definizione del modello to-be</h3>
+        <p data-en="Current-state and future-state method, now applied with value stream mapping. Requirements gathered and formalised before the target process was defined." data-de="Current-State- und Future-State-Methode, heute mit Value Stream Mapping angewandt. Anforderungen erhoben und formalisiert, bevor der Zielprozess definiert wurde.">Metodo current-state e future-state, oggi applicato con value stream mapping. Requisiti raccolti e formalizzati prima della definizione del processo target.</p>
+      </article>
+      <article class="card" data-tracks="od pmo pmi">
+        <h3 data-en="Analysis and reengineering of processes" data-de="Prozessanalyse und Reengineering">Analisi e reingegnerizzazione dei processi</h3>
+        <p data-en="The incentive process rebuilt after verifying utilisation at source. Commercial, supplier and technical processes designed and run end-to-end at MBOSS.US e.K." data-de="Der Förderprozess wurde nach der Quellenprüfung neu aufgebaut. Vertriebs-, Lieferanten- und technische Prozesse bei MBOSS.US e.K. durchgängig entworfen und geführt.">Processo degli incentivi ricostruito dopo la verifica della fruizione alla fonte. Processi commerciali, di fornitura e tecnici progettati e gestiti end-to-end in MBOSS.US e.K.</p>
+      </article>
+      <article class="card" data-tracks="od pmo pmi">
+        <h3 data-en="Managing multiple stakeholders, internal and external" data-de="Steuerung vieler interner und externer Stakeholder">Gestione di stakeholder multipli, interni ed esterni</h3>
+        <p data-en="Three sites, eight operating companies, two municipalities, the Regione Basilicata, landowning families and a public-private partnership structure. Earlier: primary contact for London traders during exchange fixing." data-de="Drei Standorte, acht operative Gesellschaften, zwei Kommunen, die Region Basilikata, Grundeigentümerfamilien und eine öffentlich-private Partnerschaftsstruktur. Zuvor: direkte Ansprechpartnerin der Londoner Händler während des Börsenfixings.">Tre siti, otto società operative, due Comuni, la Regione Basilicata, famiglie proprietarie dei terreni e una struttura di partenariato pubblico-privato. In precedenza: referente diretta dei trader di Londra durante il fixing di borsa.</p>
+      </article>
+      <article class="card" data-tracks="change pmo">
+        <h3 data-en="Design thinking, Lean Startup and Jobs-to-Be-Done" data-de="Design Thinking, Lean Startup und Jobs-to-Be-Done">Design thinking, Lean Startup e Jobs-to-Be-Done</h3>
+        <p data-en="The platform pivot run as customer development. Qualitative analysis gathered locally and integrated with quantitative modelling." data-de="Der Plattform-Pivot als Customer Development geführt. Qualitative Erhebungen vor Ort, verbunden mit quantitativer Modellierung.">Il pivot della piattaforma condotto come customer development. Analisi qualitative raccolte sul territorio e integrate con la modellazione quantitativa.</p>
+      </article>
+      <article class="card" data-tracks="change fin">
+        <h3 data-en="Spotting problems early and escalating them" data-de="Probleme früh erkennen und ansprechen">Individuare precocemente le criticità e segnalarle</h3>
+        <p data-en="The incentive verification is the clearest instance: a headline assumption that would have moved the case by roughly €3M was found, corrected and reported while the document was still in progress." data-de="Die Förderprüfung ist das klarste Beispiel: Eine nominale Annahme, die den Fall um rund 3 Mio. € verschoben hätte, wurde gefunden, korrigiert und gemeldet, während das Dokument noch in Arbeit war.">La verifica dell'agevolazione ne è l'esempio più netto: un'assunzione nominale che avrebbe spostato il caso di circa €3M è stata individuata, corretta e segnalata mentre il documento era ancora in lavorazione.</p>
+      </article>
+      <article class="card" data-tracks="fin pmo">
+        <h3 data-en="Business development: tenders, proposals, points of view" data-de="Business Development: Ausschreibungen, Angebote, Points of View">Business development: gare, proposte commerciali e POV</h3>
+        <p data-en="Pitch deck, bilingual business plan and grants research produced. An application against a public call is a tender response in all but name." data-de="Pitch Deck, zweisprachiger Businessplan und Förderrecherche erstellt. Ein Antrag auf eine öffentliche Ausschreibung ist faktisch eine Ausschreibungsantwort.">Pitch deck, business plan bilingue e ricerca bandi prodotti. Una domanda a valere su un bando pubblico è una risposta a gara in tutto tranne che nel nome.</p>
+      </article>
+      <article class="card" data-tracks="od pmo pmi">
+        <h3 data-en="Familiarity with AI tools and automation" data-de="Vertrautheit mit KI-Werkzeugen und Automatisierung">Familiarità con i tool di AI e automazione</h3>
+        <p data-en="Two AI-platform entities inside the proposed structure. An MCP server designed and built in four weeks, converting Shopify storefront designs into W3C DTCG design tokens for Figma." data-de="Zwei KI-Plattform-Einheiten innerhalb der vorgeschlagenen Struktur. Ein MCP-Server, in vier Wochen entworfen und gebaut, der Shopify-Storefront-Designs in W3C-DTCG-Design-Tokens für Figma überführt.">Due entità di piattaforma AI all'interno della struttura proposta. Un server MCP progettato e costruito in quattro settimane, che converte i design dello storefront Shopify in design token W3C DTCG per Figma.</p>
+      </article>
+      <article class="card" data-tracks="od pmi">
+        <h3 data-en="English gained through study and work abroad" data-de="Englisch durch Studium und Arbeit im Ausland">Inglese maturato con studio e lavoro all'estero</h3>
+        <p data-en="Academic year at Università Cattolica, Milan; Business English programme in Honolulu; negotiation with UK manufacturers; a London desk every day for five and a half years. Investor-standard documentation in Italian, English and German." data-de="Akademisches Jahr an der Università Cattolica in Mailand; Business-English-Programm in Honolulu; Verhandlungen mit britischen Herstellern; fünfeinhalb Jahre täglich ein Londoner Desk. Unterlagen auf Investorenniveau in Italienisch, Englisch und Deutsch.">Anno accademico all'Università Cattolica di Milano; programma di Business English a Honolulu; negoziazione con produttori britannici; un desk di Londra ogni giorno per cinque anni e mezzo. Documentazione a standard investitori in italiano, inglese e tedesco.</p>
+      </article>
   </div>
 </section>
 
-<!-- TIER 2 -->
 <section class="s2" id="t2">
-  <div class="shead">
-    <h2 class="st" data-en="Supporting analytical and professional skills">Competenze analitiche e professionali di supporto</h2>
-    <span class="tag" data-en="Tier 2 — how the lead work gets done">Livello 2 — come si realizza il lavoro principale</span>
-    <span class="hitcount" data-count="t2"></span>
-  </div>
-  <p class="sdesc" data-en="Real, exercised capabilities that serve the tier-one work rather than standing on their own as a reason to hire.">Competenze reali ed esercitate, che servono il lavoro del primo livello più che costituire da sole una ragione per assumere.</p>
+  <div class="shead"><h2 class="st" data-en="Supporting analytical and professional skills" data-de="Unterstützende analytische und fachliche Kompetenzen">Competenze analitiche e professionali di supporto</h2> <span class="tag" data-en="Tier 2 — how the lead work gets done" data-de="Ebene 2 — wie die Kernarbeit entsteht">Livello 2 — come si realizza il lavoro principale</span> <span class="hitcount" data-count="t2"></span></div>
+  <p class="sdesc" data-en="Real, exercised capabilities that carry the tier-one work." data-de="Reale, geübte Fähigkeiten, die die Arbeit der ersten Ebene tragen.">Competenze reali ed esercitate, che sostengono il lavoro del primo livello.</p>
   <ul class="grid">
-    <li data-tracks="pmi fin"><span class="n" data-en="Feasibility studies">Studi di fattibilità</span><span class="e">Basilicata 2026</span></li>
-    <li data-tracks="od pmi"><span class="n" data-en="Market sizing">Market sizing</span><span class="e">Basilicata 2026 · MBOSS.US e.K.</span></li>
-    <li data-tracks="pmi pmo"><span class="n" data-en="Market research">Ricerca di mercato</span><span class="e">MBOSS.US e.K. · FinTech: Foundations, Payments and Regulations</span></li>
-    <li data-tracks="pmi od"><span class="n" data-en="Competitive analysis and benchmarking">Analisi competitiva e benchmarking</span><span class="e">MBOSS.US e.K. · Basilicata 2026 · Università Cattolica</span></li>
-    <li data-tracks="fin pmi"><span class="n" data-en="Scenario and sensitivity analysis">Analisi di scenario e di sensitività</span><span class="e">Basilicata 2026</span></li>
-    <li data-tracks="fin"><span class="n" data-en="Business valuation">Valutazione d'azienda</span><span class="e">MBOSS.US e.K. · Basilicata 2026</span></li>
-    <li data-tracks="fin od"><span class="n" data-en="Transfer pricing">Transfer pricing</span><span class="e">Analisi intercompany, Basilicata 2026</span></li>
-    <li data-tracks="fin pmi"><span class="n" data-en="Due diligence">Due diligence</span><span class="e">Oberlandesgericht Frankfurt am Main e altre 2 organizzazioni</span></li>
-    <li data-tracks="fin"><span class="n" data-en="Project finance">Project finance</span><span class="e">DLA Piper, Finance &amp; Projects · HypoVereinsbank — UniCredit</span></li>
-    <li data-tracks="fin pmi"><span class="n" data-en="Financial analysis">Analisi finanziaria</span><span class="e">HypoVereinsbank — UniCredit · Raising Capital</span></li>
-    <li data-tracks="fin od"><span class="n" data-en="Regulatory compliance">Compliance regolamentare</span><span class="e">15 esperienze · 17 percorsi formativi</span></li>
-    <li data-tracks="od fin"><span class="n" data-en="Corporate governance">Corporate governance</span><span class="e">Basilicata 2026 · ricerca sull'Unione bancaria europea</span></li>
-    <li data-tracks="fin"><span class="n" data-en="Corporate tax">Fiscalità d'impresa</span><span class="e">DLA Piper e altre 2 organizzazioni · Fachanwaltslehrgang Steuerrecht</span></li>
-    <li data-tracks="fin od pmi"><span class="n" data-en="Legal research">Ricerca giuridica</span><span class="e">13 esperienze · 15 percorsi formativi</span></li>
-    <li data-tracks="od pmi"><span class="n" data-en="Policies and procedures">Policy e procedure</span><span class="e">11 esperienze · Ministero della Giustizia, Francoforte</span></li>
-    <li data-tracks="fin pmo"><span class="n" data-en="Risk management">Gestione del rischio</span><span class="e">Raising Capital: Credit Tech, Coin Offerings and Crowdfunding</span></li>
-    <li data-tracks="od pmo change"><span class="n" data-en="Stakeholder management">Gestione degli stakeholder</span><span class="e">MBOSS.US e.K. e altre 3 organizzazioni</span></li>
-    <li data-tracks="pmi fin"><span class="n" data-en="Negotiation">Negoziazione</span><span class="e">Produttori e fornitori · 6 esperienze</span></li>
-    <li data-tracks="od pmo change"><span class="n" data-en="Data-driven decision making">Decisioni basate sui dati</span><span class="e">17 esperienze · 18 percorsi formativi</span></li>
-    <li data-tracks="od pmo pmi"><span class="n" data-en="Analytic problem solving">Problem solving analitico</span><span class="e">17 esperienze · 18 percorsi formativi</span></li>
-    <li data-tracks="od change"><span class="n" data-en="Qualitative and quantitative research methods">Metodologie di ricerca quali-quantitative</span><span class="e">MBOSS.US e.K. · Basilicata 2026</span></li>
-    <li data-tracks="change pmi"><span class="n" data-en="Interviewing and qualitative research">Interviste e ricerca qualitativa</span><span class="e">5 esperienze · Global Village Honolulu</span></li>
-    <li data-tracks="change od"><span class="n" data-en="Strategic communications">Comunicazione strategica</span><span class="e">6 esperienze · Management of Fashion and Luxury Companies</span></li>
-    <li data-tracks="change od pmi"><span class="n" data-en="Written communication, clear and concise">Comunicazione scritta, chiara e sintetica</span><span class="e">Documentazione in italiano, inglese e tedesco</span></li>
-    <li data-tracks="change pmi"><span class="n" data-en="Presentations and public speaking">Presentazioni e public speaking</span><span class="e">8 esperienze · formazione in arringa e udienza</span></li>
-    <li data-tracks="pmo od"><span class="n" data-en="Performance metrics and KPIs">Metriche di performance e KPI</span><span class="e">MBOSS.US e.K.</span></li>
-    <li data-tracks="pmi pmo"><span class="n" data-en="Business development">Sviluppo commerciale</span><span class="e">MBOSS.US e.K. e un'altra azienda</span></li>
-    <li data-tracks="change pmi"><span class="n" data-en="Coaching and coordinating junior colleagues">Coaching e coordinamento di figure junior</span><span class="e">Tirocinio giuridico, Oberlandesgericht Frankfurt am Main</span></li>
+      <li data-tracks="pmi fin"><span class="n" data-en="Feasibility studies" data-de="Machbarkeitsstudien">Studi di fattibilità</span><span class="e" data-en="Basilicata 2026" data-de="Basilikata 2026">Basilicata 2026</span></li>
+      <li data-tracks="od pmi"><span class="n" data-en="Market sizing" data-de="Marktdimensionierung">Market sizing</span><span class="e" data-en="Basilicata 2026 · MBOSS.US e.K." data-de="Basilikata 2026 · MBOSS.US e.K.">Basilicata 2026 · MBOSS.US e.K.</span></li>
+      <li data-tracks="pmi pmo"><span class="n" data-en="Market research" data-de="Marktforschung">Ricerca di mercato</span><span class="e" data-en="MBOSS.US e.K. · FinTech: Foundations, Payments and Regulations" data-de="MBOSS.US e.K. · FinTech: Foundations, Payments and Regulations">MBOSS.US e.K. · FinTech: Foundations, Payments and Regulations</span></li>
+      <li data-tracks="pmi od"><span class="n" data-en="Competitive analysis and benchmarking" data-de="Wettbewerbsanalyse und Benchmarking">Analisi competitiva e benchmarking</span><span class="e" data-en="MBOSS.US e.K. · Basilicata 2026 · Università Cattolica" data-de="MBOSS.US e.K. · Basilikata 2026 · Università Cattolica">MBOSS.US e.K. · Basilicata 2026 · Università Cattolica</span></li>
+      <li data-tracks="fin pmi"><span class="n" data-en="Scenario and sensitivity analysis" data-de="Szenario- und Sensitivitätsanalyse">Analisi di scenario e di sensitività</span><span class="e" data-en="Basilicata 2026" data-de="Basilikata 2026">Basilicata 2026</span></li>
+      <li data-tracks="fin"><span class="n" data-en="Business valuation" data-de="Unternehmensbewertung">Valutazione d'azienda</span><span class="e" data-en="MBOSS.US e.K. · Basilicata 2026" data-de="MBOSS.US e.K. · Basilikata 2026">MBOSS.US e.K. · Basilicata 2026</span></li>
+      <li data-tracks="fin od"><span class="n" data-en="Transfer pricing" data-de="Verrechnungspreise">Transfer pricing</span><span class="e" data-en="Intercompany analysis, Basilicata 2026" data-de="Konzerninterne Analyse, Basilikata 2026">Analisi intercompany, Basilicata 2026</span></li>
+      <li data-tracks="fin pmi"><span class="n" data-en="Due diligence" data-de="Due Diligence">Due diligence</span><span class="e" data-en="Oberlandesgericht Frankfurt am Main and 2 further organisations" data-de="Oberlandesgericht Frankfurt am Main und 2 weitere Organisationen">Oberlandesgericht Frankfurt am Main e altre 2 organizzazioni</span></li>
+      <li data-tracks="fin"><span class="n" data-en="Project finance" data-de="Projektfinanzierung">Project finance</span><span class="e" data-en="DLA Piper, Finance &amp;amp; Projects · HypoVereinsbank — UniCredit" data-de="DLA Piper, Finance &amp;amp; Projects · HypoVereinsbank — UniCredit">DLA Piper, Finance &amp; Projects · HypoVereinsbank — UniCredit</span></li>
+      <li data-tracks="fin pmi"><span class="n" data-en="Financial analysis" data-de="Finanzanalyse">Analisi finanziaria</span><span class="e" data-en="HypoVereinsbank — UniCredit · Raising Capital" data-de="HypoVereinsbank — UniCredit · Raising Capital">HypoVereinsbank — UniCredit · Raising Capital</span></li>
+      <li data-tracks="fin od"><span class="n" data-en="Regulatory compliance" data-de="Regulatorische Compliance">Compliance regolamentare</span><span class="e" data-en="15 roles · 17 educational records" data-de="15 Stationen · 17 Ausbildungsnachweise">15 esperienze · 17 percorsi formativi</span></li>
+      <li data-tracks="od fin"><span class="n" data-en="Corporate governance" data-de="Corporate Governance">Corporate governance</span><span class="e" data-en="Basilicata 2026 · research on the European Banking Union" data-de="Basilikata 2026 · Forschung zur Europäischen Bankenunion">Basilicata 2026 · ricerca sull'Unione bancaria europea</span></li>
+      <li data-tracks="fin"><span class="n" data-en="Corporate tax" data-de="Unternehmenssteuerrecht">Fiscalità d'impresa</span><span class="e" data-en="DLA Piper and 2 further organisations · Fachanwaltslehrgang Steuerrecht" data-de="DLA Piper und 2 weitere Organisationen · Fachanwaltslehrgang Steuerrecht">DLA Piper e altre 2 organizzazioni · Fachanwaltslehrgang Steuerrecht</span></li>
+      <li data-tracks="fin od pmi"><span class="n" data-en="Legal research" data-de="Juristische Recherche">Ricerca giuridica</span><span class="e" data-en="13 roles · 15 educational records" data-de="13 Stationen · 15 Ausbildungsnachweise">13 esperienze · 15 percorsi formativi</span></li>
+      <li data-tracks="od pmi"><span class="n" data-en="Policies and procedures" data-de="Richtlinien und Verfahren">Policy e procedure</span><span class="e" data-en="11 roles · Ministry of Justice, Frankfurt" data-de="11 Stationen · Justizministerium, Frankfurt">11 esperienze · Ministero della Giustizia, Francoforte</span></li>
+      <li data-tracks="fin pmo"><span class="n" data-en="Risk management" data-de="Risikomanagement">Gestione del rischio</span><span class="e" data-en="Raising Capital: Credit Tech, Coin Offerings and Crowdfunding" data-de="Raising Capital: Credit Tech, Coin Offerings and Crowdfunding">Raising Capital: Credit Tech, Coin Offerings and Crowdfunding</span></li>
+      <li data-tracks="od pmo change"><span class="n" data-en="Stakeholder management" data-de="Stakeholder-Management">Gestione degli stakeholder</span><span class="e" data-en="MBOSS.US e.K. and 3 further organisations" data-de="MBOSS.US e.K. und 3 weitere Organisationen">MBOSS.US e.K. e altre 3 organizzazioni</span></li>
+      <li data-tracks="pmi fin"><span class="n" data-en="Negotiation" data-de="Verhandlungsführung">Negoziazione</span><span class="e" data-en="Manufacturers and suppliers · 6 roles" data-de="Hersteller und Lieferanten · 6 Stationen">Produttori e fornitori · 6 esperienze</span></li>
+      <li data-tracks="od pmo change"><span class="n" data-en="Data-driven decision making" data-de="Datenbasierte Entscheidungen">Decisioni basate sui dati</span><span class="e" data-en="17 roles · 18 educational records" data-de="17 Stationen · 18 Ausbildungsnachweise">17 esperienze · 18 percorsi formativi</span></li>
+      <li data-tracks="od pmo pmi"><span class="n" data-en="Analytic problem solving" data-de="Analytisches Problemlösen">Problem solving analitico</span><span class="e" data-en="17 roles · 18 educational records" data-de="17 Stationen · 18 Ausbildungsnachweise">17 esperienze · 18 percorsi formativi</span></li>
+      <li data-tracks="od change"><span class="n" data-en="Qualitative and quantitative research methods" data-de="Quali-quantitative Forschungsmethoden">Metodologie di ricerca quali-quantitative</span><span class="e" data-en="MBOSS.US e.K. · Basilicata 2026" data-de="MBOSS.US e.K. · Basilikata 2026">MBOSS.US e.K. · Basilicata 2026</span></li>
+      <li data-tracks="change pmi"><span class="n" data-en="Interviewing and qualitative research" data-de="Interviews und qualitative Forschung">Interviste e ricerca qualitativa</span><span class="e" data-en="5 roles · Global Village Honolulu" data-de="5 Stationen · Global Village Honolulu">5 esperienze · Global Village Honolulu</span></li>
+      <li data-tracks="change od"><span class="n" data-en="Strategic communications" data-de="Strategische Kommunikation">Comunicazione strategica</span><span class="e" data-en="6 roles · Management of Fashion and Luxury Companies" data-de="6 Stationen · Management of Fashion and Luxury Companies">6 esperienze · Management of Fashion and Luxury Companies</span></li>
+      <li data-tracks="change od pmi"><span class="n" data-en="Written communication, clear and concise" data-de="Schriftliche Kommunikation, klar und knapp">Comunicazione scritta, chiara e sintetica</span><span class="e" data-en="Documentation in Italian, English and German" data-de="Unterlagen in Italienisch, Englisch und Deutsch">Documentazione in italiano, inglese e tedesco</span></li>
+      <li data-tracks="change pmi"><span class="n" data-en="Presentations and public speaking" data-de="Präsentation und freie Rede">Presentazioni e public speaking</span><span class="e" data-en="8 roles · advocacy and hearing training" data-de="8 Stationen · Plädoyer- und Verhandlungstraining">8 esperienze · formazione in arringa e udienza</span></li>
+      <li data-tracks="pmo od"><span class="n" data-en="Performance metrics and KPIs" data-de="Leistungskennzahlen und KPI">Metriche di performance e KPI</span><span class="e" data-en="MBOSS.US e.K." data-de="MBOSS.US e.K.">MBOSS.US e.K.</span></li>
+      <li data-tracks="pmi pmo"><span class="n" data-en="Business development" data-de="Geschäftsentwicklung">Sviluppo commerciale</span><span class="e" data-en="MBOSS.US e.K. and one further company" data-de="MBOSS.US e.K. und ein weiteres Unternehmen">MBOSS.US e.K. e un'altra azienda</span></li>
+      <li data-tracks="change pmi"><span class="n" data-en="Coaching and coordinating junior colleagues" data-de="Coaching und Anleitung jüngerer Kolleginnen und Kollegen">Coaching e coordinamento di figure junior</span><span class="e" data-en="Legal traineeship, Oberlandesgericht Frankfurt am Main" data-de="Referendariat, Oberlandesgericht Frankfurt am Main">Tirocinio giuridico, Oberlandesgericht Frankfurt am Main</span></li>
   </ul>
 </section>
 
-<!-- TIER 3 -->
 <section class="s3" id="t3">
-  <div class="shead">
-    <h2 class="st" data-en="Implementation, digital and product">Implementazione, digitale e prodotto</h2>
-    <span class="tag" data-en="Tier 3 — evidence that I build, not only advise">Livello 3 — prova che costruisco, non solo consiglio</span>
-    <span class="hitcount" data-count="t3"></span>
-  </div>
-  <p class="sdesc" data-en="These exist because I built working things, not because I studied them. They matter for one reason: they show a recommendation of mine can be carried through to something that runs. They are not a bid to be hired as a developer.">Queste esistono perché ho costruito cose funzionanti, non perché le ho studiate. Contano per una ragione: dimostrano che una mia raccomandazione può arrivare fino a qualcosa che funziona. Non sono una candidatura da sviluppatrice.</p>
+  <div class="shead"><h2 class="st" data-en="Implementation, digital and product" data-de="Umsetzung, Digitales und Produkt">Implementazione, digitale e prodotto</h2> <span class="tag" data-en="Tier 3 — the evidence that I build" data-de="Ebene 3 — der Beleg, dass ich baue">Livello 3 — la prova che costruisco</span> <span class="hitcount" data-count="t3"></span></div>
+  <p class="sdesc" data-en="These exist because I built working things. They matter for one reason: they show that a recommendation of mine reaches something that runs." data-de="Diese gibt es, weil ich funktionierende Dinge gebaut habe. Sie zählen aus einem Grund: Sie zeigen, dass eine Empfehlung von mir bis zu etwas reicht, das läuft.">Queste esistono perché ho costruito cose funzionanti. Contano per una ragione: dimostrano che una mia raccomandazione arriva fino a qualcosa che funziona.</p>
   <ul class="grid">
-    <li data-tracks="pmo pmi"><span class="n" data-en="Product design and digital shopfront design">Design di prodotto e del negozio digitale</span><span class="e" data-en="400 products designed · the entire MBOSS.US e.K. e-commerce site · Creative Director">400 prodotti disegnati · intero sito e-commerce MBOSS.US e.K. · Direttrice Creativa</span></li>
-    <li data-tracks="pmo od"><span class="n" data-en="Design, build and deploy of digital solutions">Design, build &amp; deploy di soluzioni digitali</span><span class="e">Shopify, Liquid, React, Next.js · server MCP</span></li>
-    <li data-tracks="pmo"><span class="n" data-en="Digital product development">Sviluppo di prodotti digitali</span><span class="e">MBOSS.US e.K. · piattaforma eventi 2018–2022</span></li>
-    <li data-tracks="pmo change"><span class="n" data-en="Requirements gathering and formalisation">Raccolta e formalizzazione dei requisiti</span><span class="e">Piattaforme costruite in proprio, dal bisogno al rilascio</span></li>
-    <li data-tracks="pmo"><span class="n" data-en="Digitalisation assessment">Assessment del livello di digitalizzazione</span><span class="e">MBOSS.US e.K. · Basilicata 2026</span></li>
-    <li data-tracks="pmo change"><span class="n" data-en="Customer journey mapping and customer experience">Customer journey mapping ed esperienza cliente</span><span class="e">MBOSS.US e.K.</span></li>
-    <li data-tracks="pmo"><span class="n" data-en="User experience (UX)">User experience (UX)</span><span class="e">MBOSS.US e.K.</span></li>
-    <li data-tracks="pmo"><span class="n" data-en="Web and e-commerce analytics">Analytics web ed e-commerce</span><span class="e">MBOSS.US e.K. · Foundations of Digital Marketing and E-commerce</span></li>
-    <li data-tracks="pmo change"><span class="n" data-en="Agile development">Sviluppo agile</span><span class="e">MBOSS.US e.K. e un'altra azienda</span></li>
-    <li data-tracks="pmo"><span class="n" data-en="Product management and road mapping">Product management e road mapping</span><span class="e">MBOSS.US e.K. · piattaforma eventi</span></li>
-    <li data-tracks="od pmi"><span class="n" data-en="Geospatial platform development">Sviluppo di piattaforme geospaziali</span><span class="e">Esri ArcGIS con dati cartografici NASA — Francoforte e New York</span></li>
-    <li data-tracks="pmi"><span class="n" data-en="Sustainable supply chain management">Gestione sostenibile della filiera</span><span class="e">Fibre certificate OEKO-TEX · stampa GOTS ad acqua · tracciabilità</span></li>
-    <li data-tracks="fin pmo"><span class="n" data-en="FinTech, payments and blockchain">FinTech, pagamenti e blockchain</span><span class="e">FinTech: Foundations, Payments and Regulations</span></li>
-    <li data-tracks="pmo change"><span class="n" data-en="Behavioural economics">Economia comportamentale</span><span class="e">MBOSS.US · FinTech: Foundations, Payments and Regulations</span></li>
-    <li data-tracks="pmo pmi"><span class="n" data-en="Content strategy and digital marketing">Content strategy e marketing digitale</span><span class="e">6 esperienze · Foundations of Digital Marketing and E-commerce</span></li>
+      <li data-tracks="pmo pmi"><span class="n" data-en="Product design and digital shopfront design" data-de="Produkt- und Shopdesign">Design di prodotto e del negozio digitale</span><span class="e" data-en="400 products designed · the entire MBOSS.US e.K. e-commerce site · Creative Director" data-de="400 Produkte entworfen · die gesamte E-Commerce-Site von MBOSS.US e.K. · Creative Director">400 prodotti disegnati · intero sito e-commerce MBOSS.US e.K. · Direttrice Creativa</span></li>
+      <li data-tracks="pmo od"><span class="n" data-en="Design, build and deploy of digital solutions" data-de="Design, Build und Deploy digitaler Lösungen">Design, build &amp; deploy di soluzioni digitali</span><span class="e" data-en="Shopify, Liquid, React, Next.js · MCP server" data-de="Shopify, Liquid, React, Next.js · MCP-Server">Shopify, Liquid, React, Next.js · server MCP</span></li>
+      <li data-tracks="pmo"><span class="n" data-en="Digital product development" data-de="Digitale Produktentwicklung">Sviluppo di prodotti digitali</span><span class="e" data-en="MBOSS.US e.K. · event platform 2018–2022" data-de="MBOSS.US e.K. · Event-Plattform 2018–2022">MBOSS.US e.K. · piattaforma eventi 2018–2022</span></li>
+      <li data-tracks="pmo change"><span class="n" data-en="Requirements gathering and formalisation" data-de="Anforderungserhebung und -formalisierung">Raccolta e formalizzazione dei requisiti</span><span class="e" data-en="Platforms built in-house, from need to release" data-de="Eigene Plattformen, vom Bedarf bis zum Release">Piattaforme costruite in proprio, dal bisogno al rilascio</span></li>
+      <li data-tracks="pmo"><span class="n" data-en="Digitalisation assessment" data-de="Digitalisierungs-Assessment">Assessment del livello di digitalizzazione</span><span class="e" data-en="MBOSS.US e.K. · Basilicata 2026" data-de="MBOSS.US e.K. · Basilikata 2026">MBOSS.US e.K. · Basilicata 2026</span></li>
+      <li data-tracks="pmo change"><span class="n" data-en="Customer journey mapping and customer experience" data-de="Customer Journey Mapping und Kundenerlebnis">Customer journey mapping ed esperienza cliente</span><span class="e" data-en="MBOSS.US e.K." data-de="MBOSS.US e.K.">MBOSS.US e.K.</span></li>
+      <li data-tracks="pmo"><span class="n" data-en="User experience (UX)" data-de="User Experience (UX)">User experience (UX)</span><span class="e" data-en="MBOSS.US e.K." data-de="MBOSS.US e.K.">MBOSS.US e.K.</span></li>
+      <li data-tracks="pmo"><span class="n" data-en="Web and e-commerce analytics" data-de="Web- und E-Commerce-Analytics">Analytics web ed e-commerce</span><span class="e" data-en="MBOSS.US e.K. · Foundations of Digital Marketing and E-commerce" data-de="MBOSS.US e.K. · Foundations of Digital Marketing and E-commerce">MBOSS.US e.K. · Foundations of Digital Marketing and E-commerce</span></li>
+      <li data-tracks="pmo change"><span class="n" data-en="Agile development" data-de="Agile Entwicklung">Sviluppo agile</span><span class="e" data-en="MBOSS.US e.K. and one further company" data-de="MBOSS.US e.K. und ein weiteres Unternehmen">MBOSS.US e.K. e un'altra azienda</span></li>
+      <li data-tracks="pmo"><span class="n" data-en="Product management and road mapping" data-de="Produktmanagement und Roadmapping">Product management e road mapping</span><span class="e" data-en="MBOSS.US e.K. · event platform" data-de="MBOSS.US e.K. · Event-Plattform">MBOSS.US e.K. · piattaforma eventi</span></li>
+      <li data-tracks="od pmi"><span class="n" data-en="Geospatial platform development" data-de="Entwicklung von Geoplattformen">Sviluppo di piattaforme geospaziali</span><span class="e" data-en="Esri ArcGIS with NASA map data — Frankfurt and New York" data-de="Esri ArcGIS mit NASA-Kartendaten — Frankfurt und New York">Esri ArcGIS con dati cartografici NASA — Francoforte e New York</span></li>
+      <li data-tracks="pmi"><span class="n" data-en="Sustainable supply chain management" data-de="Nachhaltiges Lieferkettenmanagement">Gestione sostenibile della filiera</span><span class="e" data-en="OEKO-TEX certified fibres · GOTS water-based printing · traceability" data-de="OEKO-TEX-zertifizierte Fasern · GOTS-Wasserdruck · Rückverfolgbarkeit">Fibre certificate OEKO-TEX · stampa GOTS ad acqua · tracciabilità</span></li>
+      <li data-tracks="fin pmo"><span class="n" data-en="FinTech, payments and blockchain" data-de="FinTech, Zahlungsverkehr und Blockchain">FinTech, pagamenti e blockchain</span><span class="e" data-en="FinTech: Foundations, Payments and Regulations" data-de="FinTech: Foundations, Payments and Regulations">FinTech: Foundations, Payments and Regulations</span></li>
+      <li data-tracks="pmo change"><span class="n" data-en="Behavioural economics" data-de="Verhaltensökonomie">Economia comportamentale</span><span class="e" data-en="MBOSS.US · FinTech: Foundations, Payments and Regulations" data-de="MBOSS.US · FinTech: Foundations, Payments and Regulations">MBOSS.US · FinTech: Foundations, Payments and Regulations</span></li>
+      <li data-tracks="pmo pmi"><span class="n" data-en="Content strategy and digital marketing" data-de="Content-Strategie und digitales Marketing">Content strategy e marketing digitale</span><span class="e" data-en="6 roles · Foundations of Digital Marketing and E-commerce" data-de="6 Stationen · Foundations of Digital Marketing and E-commerce">6 esperienze · Foundations of Digital Marketing and E-commerce</span></li>
   </ul>
 </section>
 
-<!-- TIER 4 -->
 <section class="s4" id="t4">
-  <div class="shead">
-    <h2 class="st" data-en="Background and sector-specific">Background e competenze settoriali</h2>
-    <span class="tag" data-en="Tier 4 — credible, deliberately not leading">Livello 4 — credibili, deliberatamente non in primo piano</span>
-  </div>
-  <p class="sdesc" data-en="All of this is genuine and documented, and none of it is what I am asking to be hired for. It sits here because it explains how the tier-one work became possible: a legal and markets training that produced the habit of checking a figure against its primary source. If one of these is central to your vacancy, say so and it moves to the front.">Tutto questo è reale e documentato, e nulla di questo è ciò per cui chiedo di essere assunta. Sta qui perché spiega come il lavoro del primo livello sia diventato possibile: una formazione giuridica e di mercato che ha prodotto l'abitudine a verificare un dato alla fonte. Se una di queste voci è centrale per la vostra posizione, ditelo e passa in primo piano.</p>
+  <div class="shead"><h2 class="st" data-en="The foundation: legal and markets training" data-de="Das Fundament: juristische und Marktausbildung">Il fondamento: formazione giuridica e di mercato</h2> <span class="tag" data-en="Tier 4 — the base that carries the rest" data-de="Ebene 4 — die Basis, die das Übrige trägt">Livello 4 — la base che sorregge il resto</span></div>
+  <p class="sdesc" data-en="From here come the habit of verifying a figure at source, the reading of a contract and of a balance sheet, and composure in front of a large number. If one of these is central to your vacancy, say so and it moves to the front." data-de="Von hier kommen die Gewohnheit, eine Zahl an der Quelle zu prüfen, das Lesen eines Vertrags und einer Bilanz und die Ruhe vor einer großen Summe. Ist einer dieser Punkte für Ihre Position zentral, sagen Sie es, und er rückt nach vorn.">Da qui vengono l'abitudine di verificare un dato alla fonte, la lettura di un contratto e di un bilancio, e la calma davanti a una cifra grande. Se una di queste voci è centrale per la vostra posizione, ditelo e passa in primo piano.</p>
   <ul class="flat" data-tracks="">
-    <li data-en="Banking">Banking</li><li data-en="Capital markets">Mercati dei capitali</li>
-    <li data-en="Financial markets">Mercati finanziari</li><li data-en="Financial regulation">Regolamentazione finanziaria</li>
-    <li data-en="Trading — Tullett Prebon">Trading — Tullett Prebon</li><li data-en="Fixed income, government bonds">Reddito fisso, titoli di Stato</li>
-    <li data-en="Credit analysis">Analisi del credito</li><li data-en="Mergers &amp; acquisitions">Fusioni e acquisizioni</li>
-    <li data-en="Insurance">Assicurazioni</li><li data-en="Corporate law">Diritto societario</li>
-    <li data-en="Commercial law">Diritto commerciale</li><li data-en="Administrative law">Diritto amministrativo</li>
-    <li data-en="Criminal and international criminal law">Diritto penale e penale internazionale</li>
-    <li data-en="Civil litigation">Contenzioso civile</li>
-    <li data-en="Luxury and fashion branding">Branding luxury e fashion</li>
-    <li data-en="Brand management">Brand management</li>
-    <li data-en="Social media">Social media</li>
+      <li data-en="Banking" data-de="Banking">Banking</li>
+      <li data-en="Capital markets" data-de="Kapitalmärkte">Mercati dei capitali</li>
+      <li data-en="Financial markets" data-de="Finanzmärkte">Mercati finanziari</li>
+      <li data-en="Financial regulation" data-de="Finanzmarktregulierung">Regolamentazione finanziaria</li>
+      <li data-en="Trading — Tullett Prebon" data-de="Handel — Tullett Prebon">Trading — Tullett Prebon</li>
+      <li data-en="Fixed income, government bonds" data-de="Anleihen, Staatsanleihen">Reddito fisso, titoli di Stato</li>
+      <li data-en="Credit analysis" data-de="Kreditanalyse">Analisi del credito</li>
+      <li data-en="Mergers &amp;amp; acquisitions" data-de="Fusionen und Übernahmen">Fusioni e acquisizioni</li>
+      <li data-en="Insurance" data-de="Versicherungsrecht">Assicurazioni</li>
+      <li data-en="Corporate law" data-de="Gesellschaftsrecht">Diritto societario</li>
+      <li data-en="Commercial law" data-de="Handelsrecht">Diritto commerciale</li>
+      <li data-en="Administrative law" data-de="Verwaltungsrecht">Diritto amministrativo</li>
+      <li data-en="Criminal and international criminal law" data-de="Straf- und Völkerstrafrecht">Diritto penale e penale internazionale</li>
+      <li data-en="Civil litigation" data-de="Zivilprozess">Contenzioso civile</li>
+      <li data-en="Luxury and fashion branding" data-de="Luxus- und Mode-Branding">Branding luxury e fashion</li>
+      <li data-en="Brand management" data-de="Markenführung">Brand management</li>
+      <li data-en="Social media" data-de="Social Media">Social media</li>
   </ul>
 </section>
 
-<!-- LANGUAGES -->
 <section>
-  <div class="shead"><h2 class="st" data-en="Languages">Lingue</h2></div>
+  <div class="shead"><h2 class="st" data-en="Languages" data-de="Sprachen">Lingue</h2></div>
   <ul class="langs">
-    <li><b data-en="German">Tedesco</b><span data-en="Native · legal and professional working language">Madrelingua · lingua di lavoro giuridica e professionale</span></li>
-    <li><b data-en="Italian">Italiano</b><span data-en="Native · legal and professional working language">Madrelingua · lingua di lavoro giuridica e professionale</span></li>
-    <li><b data-en="English">Inglese</b><span data-en="C1 · working language at Allen &amp; Overy LLP and Tullett Prebon">C1 · lingua di lavoro in Allen &amp; Overy LLP e Tullett Prebon</span></li>
+    <li><b data-en="German" data-de="Deutsch">Tedesco</b><span data-en="Native · legal and professional working language" data-de="Muttersprache · juristische und berufliche Arbeitssprache">Madrelingua · lingua di lavoro giuridica e professionale</span></li>
+    <li><b data-en="Italian" data-de="Italienisch">Italiano</b><span data-en="Native · legal and professional working language" data-de="Muttersprache · juristische und berufliche Arbeitssprache">Madrelingua · lingua di lavoro giuridica e professionale</span></li>
+    <li><b data-en="English" data-de="Englisch">Inglese</b><span data-en="C1 · working language at Allen &amp;amp; Overy LLP and Tullett Prebon" data-de="C1 · Arbeitssprache bei Allen &amp;amp; Overy LLP und Tullett Prebon">C1 · lingua di lavoro in Allen &amp; Overy LLP e Tullett Prebon</span></li>
   </ul>
 </section>
 
-<!-- GAPS -->
-<div class="gap">
-  <h2 data-en="Where I have no evidence yet">Dove non ho ancora evidenza</h2>
-  <p data-en="Against the role families above, these are the things I cannot demonstrate. They are listed because a candidate who names her own gaps is easier to assess than one who waits to be caught.">Rispetto alle famiglie di ruolo qui sopra, queste sono le cose che non posso dimostrare. Le elenco perché una candidata che nomina da sé le proprie lacune è più facile da valutare di una che aspetta di essere scoperta.</p>
-  <ul>
-    <li data-en="<b>ZBR and Lean Six Sigma.</b> I hold neither certification and do not imply otherwise. What I can say is that the feasibility work was zero-based in method: the scope was rebuilt from nothing once the model showed the fixed estate could not be carried, rather than trimmed from an existing plan."><b>ZBR e Lean Six Sigma.</b> Non possiedo nessuna delle due certificazioni e non lascio intendere il contrario. Quello che posso dire è che il lavoro di fattibilità è stato zero-based nel metodo: il perimetro è stato ricostruito da zero quando il modello ha mostrato che la struttura fissa non era sostenibile, non sfoltito da un piano esistente.</li>
-    <li data-en="<b>Communication and engagement strategy, training and adoption monitoring.</b> Not evidenced. Design thinking, impact analysis and early problem escalation are evidenced; the rest of the change-management toolkit is not, and that is the role family where I answer with the least."><b>Strategia di comunicazione ed engagement, formazione e monitoraggio dell'adoption.</b> Non documentate. Design thinking, analisi degli impatti e segnalazione precoce delle criticità lo sono; il resto della cassetta degli attrezzi del change management no, ed è la famiglia di ruolo in cui rispondo con meno.</li>
-    <li data-en="<b>A multi-year fee-earning consulting tenure.</b> Five and a half years at Tullett Prebon (Securities) Ltd, a UK multinational, and placements at DLA Piper UK LLP and Allen &amp; Overy LLP are documented. What is absent is years billed as a consultant in my own right. The complete engagement — diagnosis, target design, quantified plan, course correction — exists on one case, documented."><b>Un'anzianità pluriennale come consulente a parcella.</b> Cinque anni e mezzo in Tullett Prebon (Securities) Ltd, multinazionale britannica, e i tirocini in DLA Piper UK LLP e Allen &amp; Overy LLP sono documentati. Manca l'anzianità fatturata come consulente in proprio. L'incarico completo — diagnosi, disegno del modello obiettivo, piano quantificato, correzione di rotta — esiste su un caso, documentato.</li>
-      </ul>
-</div>
-
-<!-- PRECISION -->
 <div class="precision">
-  <h2 data-en="Precision about what these skills are, and are not">Precisazioni su cosa sono, e cosa non sono, queste competenze</h2>
-  <p data-en="A skills page is only useful if every statement holds up in an interview. Two things are easy to blur — what a qualification certifies, and what a figure measures — and are separated below, followed by the technical base the rest of the page rests on.">Una pagina di competenze serve solo se ogni affermazione regge un colloquio. Due cose sono facili da confondere — cosa attesta un titolo e cosa misura una cifra — e qui sono separate; in fondo, la base tecnica su cui poggia tutto il resto.</p>
-  <div class="pgroup">
-    <h3 data-en="The qualifications: what they certify, and what they do not">I titoli: cosa attestano e cosa no</h3>
-    <dl>
-      <div class="pair"><dt data-en="Giurista, not avvocato">Giurista, non avvocato</dt>
-        <dd data-en="German-trained jurist. First State Examination in Law, 2008; legal traineeship 2008–2011 at the Oberlandesgericht Frankfurt am Main; admitted to the Second State Examination in 2010 and in 2011. I am not an avvocato, not a Rechtsanwältin and not admitted to any bar.">Giurista di formazione tedesca. Primo Esame di Stato in Giurisprudenza, 2008; tirocinio giuridico 2008–2011 presso l'Oberlandesgericht Frankfurt am Main; ammessa al Secondo Esame di Stato nel 2010 e nel 2011. Non sono avvocato, non sono Rechtsanwältin e non sono iscritta ad alcun albo.</dd></div>
-      <div class="pair"><dt data-en="Corporate tax law — specialisation by examination">Diritto tributario d'impresa — specializzazione per esame</dt>
-        <dd data-en="Fachanwaltslehrgang Steuerrecht, examinations passed at first attempt, 2013. They were cases to be resolved, not questions of recall: tax law, company accounts and the statutes that attach to them, from the Bewertungsgesetz to the Immobilienbewertungsrichtlinie. What falls outside it is practice before a court, and I do not claim the Fachanwältin für Steuerrecht title.">Fachanwaltslehrgang Steuerrecht, esami superati al primo tentativo, 2013. Erano casi da risolvere, non domande a memoria: diritto tributario, bilancio e le leggi che vi si collegano, dal Bewertungsgesetz alla Immobilienbewertungsrichtlinie. Resta fuori la pratica davanti al giudice, e non rivendico il titolo di Fachanwältin für Steuerrecht.</dd></div>
-      <div class="pair"><dt data-en="Capital markets law — specialisation by practice">Diritto dei mercati dei capitali — specializzazione per pratica</dt>
-        <dd data-en="The exact inverse: here there is no examination, there is the path. HypoVereinsbank — UniCredit: project finance. Allen &amp; Overy LLP, Frankfurt, Global Equity Capital Markets and M&amp;A, 2004: the primary market — IPOs, secondary offerings, rights issues, convertible and exchangeable bonds, block trades and cross-border M&amp;A. Tullett Prebon (Securities) Ltd, 2001–2006: the secondary market, government bonds. DLA Piper UK LLP: project finance and banking supervision. Cross-border investment banking, a cross-border commercial law firm, trading and brokerage for systemically relevant banks: the complete spectrum, from the side of every market participant.">L’esatto contrario: qui non c’è un esame, c’è il percorso. HypoVereinsbank — UniCredit: project finance. Allen &amp; Overy LLP, Francoforte, Global Equity Capital Markets e M&amp;A, 2004: mercato primario — IPO, offerte secondarie, aumenti di capitale, obbligazioni convertibili e scambiabili, block trade e M&amp;A transfrontaliere. Tullett Prebon (Securities) Ltd, 2001–2006: mercato secondario, titoli di Stato. DLA Piper UK LLP: project finance e vigilanza bancaria. Investment banking transfrontaliero, studio legale commerciale transfrontaliero, trading e brokerage per banche di rilevanza sistemica: lo spettro completo, dal lato di ogni operatore di mercato.</dd></div>
-      <div class="pair"><dt data-en="EU-law foundation">Fondamento di diritto europeo</dt>
-        <dd data-en="Università Cattolica del Sacro Cuore, Milan, 1998–1999: specialisation in international law with particular regard to the law of the European Union; certification in comparative constitutional law; completed courses in private international law. 30/30 in both. Equivalence attested by the Faculty of Law of the Goethe-Universität Frankfurt, 1999.">Università Cattolica del Sacro Cuore, Milano, 1998–1999: specializzazione in diritto internazionale con particolare riguardo al diritto dell'Unione europea; certificazione in diritto costituzionale comparato; corsi completati in diritto internazionale privato. 30/30 in entrambi. Equipollenza attestata dalla Facoltà di Giurisprudenza della Goethe-Universität Frankfurt, 1999.</dd></div>
-    </dl>
-  </div>
-  <div class="pgroup">
-    <h3 data-en="The figures: what they measure, and what they do not">Le cifre: cosa misurano e cosa no</h3>
-    <dl>
-      <div class="pair"><dt data-en="The €3M figure">La cifra di €3M</dt>
-        <dd data-en="A revision to a projected public-incentive benefit, after verifying the applicable utilisation percentage against primary sources. It is not money recovered, not savings realised, not funding secured.">È una rettifica di un beneficio agevolativo previsto, dopo aver verificato la percentuale di fruizione applicabile alla fonte. Non è denaro recuperato, non sono risparmi realizzati, non è finanziamento ottenuto.</dd></div>
-      <div class="pair"><dt data-en="€5M–€500M: individual notionals">€5M–€500M: nozionali singoli</dt>
-        <dd data-en="Institutional government-bond orders at Tullett Prebon (Securities) Ltd, 2001–2006. The range is the notional of an individual order, not an aggregate daily volume.">Ordini istituzionali su titoli di Stato in Tullett Prebon (Securities) Ltd, 2001–2006. La forbice indica il nozionale del singolo ordine, non un volume giornaliero aggregato.</dd></div>
-      <div class="pair"><dt data-en="Eight companies: proposed, not incorporated">Otto società: proposte, non costituite</dt>
-        <dd data-en="The holding structure and the public-infrastructure partnership option were developed at feasibility stage. No entity was incorporated and no partnership was executed on that basis.">La struttura della holding e l'opzione di partenariato per l'infrastruttura pubblica sono state sviluppate in fase di fattibilità. Nessuna entità è stata costituita e nessun partenariato è stato perfezionato su quella base.</dd></div>
-    </dl>
-  </div>
-  <div class="pgroup">
-    <h3 data-en="The technical and operating base">La base tecnica e operativa</h3>
-    <dl>
-      <div class="pair"><dt data-en="Accounting systems and company accounts — the base the models rest on">Sistemi contabili e bilancio — la base dei modelli</dt>
-        <dd data-en="SAP ERP FI/CO, 100/100 con lode; DATEV and Lexware, 97/100. It is the reason a ten-year model starts from the accounts and not from a blank sheet: I know where the figures come from, how they were posted, and where they break.">SAP ERP FI/CO, 100/100 con lode; DATEV e Lexware, 97/100. È la ragione per cui un modello a dieci anni parte dal bilancio e non da un foglio bianco: so da dove vengono i numeri, come sono stati registrati e dove si rompono.</dd></div>
-      <div class="pair"><dt data-en="Digital and AI work — built by me, and recent">Lavoro digitale e AI — costruito da me, di recente</dt>
-        <dd data-en="The Shopify storefront, the React and Next.js components and the MCP server — built in four weeks, converting storefront designs into W3C DTCG design tokens for Figma — are my own work, most recently in 2026. Two of the entities in the proposed Basilicata structure are AI platforms. I do not use AI as an argument: I use it as a tool and I have taken it into production.">Lo storefront Shopify, i componenti React e Next.js e il server MCP — costruito in quattro settimane, converte i design dello storefront in design token W3C DTCG per Figma — sono lavoro mio, da ultimo nel 2026. Nella struttura proposta per la Basilicata due entità sono piattaforme AI. Non uso l’AI come argomento: la uso come strumento e l’ho portata in produzione.</dd></div>
-      <div class="pair"><dt data-en="MBOSS.US e.K. — founder and Creative Director; the brand restarts in Italy">MBOSS.US e.K. — fondatrice e Direttrice Creativa; il marchio riparte in Italia</dt>
-        <dd data-en="Sustainable fashion and homeware, as founder and Creative Director. I <b>designed all 400 products in the catalogue and the entire e-commerce site</b> — from concept to finished product to shopfront. Supplier selection and negotiation, material compliance and traceability, positioning. Storefront and digital tools built in-house. The German business is on pause during my return to Italy: with the repatriation the brand restarts here, registered as an Italian startup. The capabilities that built it are the ones listed on this page.">Moda e complementi d'arredo sostenibili, come fondatrice e Direttrice Creativa. Ho <b>disegnato tutti i 400 prodotti del catalogo e l'intero sito e-commerce</b> — dal concept al prodotto finito alla vetrina. Selezione e negoziazione dei fornitori, conformità dei materiali e tracciabilità, posizionamento. Storefront e strumenti digitali costruiti in proprio. L'attività tedesca è in pausa durante il rientro in Italia: con il rimpatrio il marchio riparte da qui, registrato come startup italiana. Le competenze che l'hanno costruita sono quelle elencate in questa pagina.</dd></div>
-    </dl>
-  </div>
-  </div>
+  <h2 data-en="Precision: what each qualification certifies, what each figure measures" data-de="Präzision: was jeder Titel bescheinigt, was jede Zahl misst">Precisione: cosa attesta ogni titolo, cosa misura ogni cifra</h2>
+  <p data-en="A skills page works when every statement holds up in an interview. Here each qualification and each number is returned to its exact meaning, and at the end the technical base the rest rests on." data-de="Eine Kompetenzseite taugt, wenn jede Aussage einem Gespräch standhält. Hier wird jeder Titel und jede Zahl auf ihre genaue Bedeutung zurückgeführt, und am Ende steht die technische Basis, auf der das Übrige ruht.">Una pagina di competenze serve quando ogni affermazione regge un colloquio. Qui ogni titolo e ogni numero è riportato al suo significato esatto, e in fondo la base tecnica su cui poggia il resto.</p>
+    <div class="pgroup">
+      <h3 data-en="The qualifications: what they certify" data-de="Die Titel: was sie bescheinigen">I titoli: cosa attestano</h3>
+      <dl>
+        <div class="pair"><dt data-en="German-trained jurist" data-de="Juristin deutscher Ausbildung">Giurista di formazione tedesca</dt>
+          <dd data-en="First State Examination in Law, 2008; legal traineeship 2008–2011 at the Oberlandesgericht Frankfurt am Main; admitted to the Second State Examination in 2010 and in 2011. The title I use is <b>giurista</b>." data-de="Erstes Juristisches Staatsexamen 2008; Referendariat 2008–2011 am Oberlandesgericht Frankfurt am Main; 2010 und 2011 zum Zweiten Staatsexamen zugelassen. Die Bezeichnung, die ich führe, lautet <b>giurista</b>.">Primo Esame di Stato in Giurisprudenza, 2008; tirocinio giuridico 2008–2011 presso l'Oberlandesgericht Frankfurt am Main; ammessa al Secondo Esame di Stato nel 2010 e nel 2011. Il titolo che uso è <b>giurista</b>.</dd></div>
+        <div class="pair"><dt data-en="Corporate tax law — specialisation by examination" data-de="Unternehmenssteuerrecht — Spezialisierung durch Prüfung">Diritto tributario d'impresa — specializzazione per esame</dt>
+          <dd data-en="Fachanwaltslehrgang Steuerrecht, examinations passed at first attempt, 2013. They were cases to be resolved: tax law, company accounts and the statutes that attach to them, from the Bewertungsgesetz to the Immobilienbewertungsrichtlinie. A specialisation established by examination, on casework." data-de="Fachanwaltslehrgang Steuerrecht, Prüfungen im ersten Anlauf bestanden, 2013. Es waren Fälle zu lösen: Steuerrecht, Bilanz und die damit verbundenen Gesetze, vom Bewertungsgesetz bis zur Immobilienbewertungsrichtlinie. Eine durch Prüfung an Fällen nachgewiesene Spezialisierung.">Fachanwaltslehrgang Steuerrecht, esami superati al primo tentativo, 2013. Erano casi da risolvere: diritto tributario, bilancio e le leggi che vi si collegano, dal Bewertungsgesetz alla Immobilienbewertungsrichtlinie. Una specializzazione accertata per esame, sulla casistica.</dd></div>
+        <div class="pair"><dt data-en="Capital markets law — specialisation by practice" data-de="Kapitalmarktrecht — Spezialisierung durch Praxis">Diritto dei mercati dei capitali — specializzazione per pratica</dt>
+          <dd data-en="Here the specialisation comes from the path, from the side of every market participant. <b>HypoVereinsbank — UniCredit</b>: project finance. <b>Allen &amp;amp; Overy LLP</b>, Frankfurt, Global Equity Capital Markets and M&amp;amp;A, 2004: the primary market — IPOs, secondary offerings, rights issues, convertible and exchangeable bonds, block trades and cross-border M&amp;amp;A. <b>Tullett Prebon (Securities) Ltd</b>, 2001–2006: the secondary market, government bonds. <b>DLA Piper UK LLP</b>: project finance and banking supervision. Cross-border investment banking, a cross-border commercial law firm, trading and brokerage for systemically relevant banks: the complete spectrum." data-de="Hier entsteht die Spezialisierung aus dem Weg, von der Seite jedes Marktteilnehmers. <b>HypoVereinsbank — UniCredit</b>: Projektfinanzierung. <b>Allen &amp;amp; Overy LLP</b>, Frankfurt, Global Equity Capital Markets und M&amp;amp;A, 2004: Primärmarkt — IPOs, Zweitplatzierungen, Kapitalerhöhungen, Wandel- und Umtauschanleihen, Block Trades und grenzüberschreitende M&amp;amp;A. <b>Tullett Prebon (Securities) Ltd</b>, 2001–2006: Sekundärmarkt, Staatsanleihen. <b>DLA Piper UK LLP</b>: Projektfinanzierung und Bankenaufsicht. Grenzüberschreitendes Investment Banking, grenzüberschreitende Wirtschaftskanzlei, Handel und Brokerage für systemrelevante Banken: das vollständige Spektrum.">Qui la specializzazione viene dal percorso, lato di ogni operatore di mercato. <b>HypoVereinsbank — UniCredit</b>: project finance. <b>Allen &amp; Overy LLP</b>, Francoforte, Global Equity Capital Markets e M&amp;A, 2004: mercato primario — IPO, offerte secondarie, aumenti di capitale, obbligazioni convertibili e scambiabili, block trade e M&amp;A transfrontaliere. <b>Tullett Prebon (Securities) Ltd</b>, 2001–2006: mercato secondario, titoli di Stato. <b>DLA Piper UK LLP</b>: project finance e vigilanza bancaria. Investment banking transfrontaliero, studio legale commerciale transfrontaliero, trading e brokerage per banche di rilevanza sistemica: lo spettro completo.</dd></div>
+        <div class="pair"><dt data-en="EU-law foundation" data-de="Europarechtliches Fundament">Fondamento di diritto europeo</dt>
+          <dd data-en="Università Cattolica del Sacro Cuore, Milan, 1998–1999: specialisation in international law with particular regard to the law of the European Union; certification in comparative constitutional law; completed courses in private international law. 30/30 in both. Equivalence attested by the Faculty of Law of the Goethe-Universität Frankfurt, 1999." data-de="Università Cattolica del Sacro Cuore, Mailand, 1998–1999: Spezialisierung im Völker- und Europarecht; Zertifikat im vergleichenden Verfassungsrecht; abgeschlossene Kurse im Internationalen Privatrecht. 30/30 in beiden. Gleichwertigkeit bescheinigt vom Fachbereich Rechtswissenschaft der Goethe-Universität Frankfurt, 1999.">Università Cattolica del Sacro Cuore, Milano, 1998–1999: specializzazione in diritto internazionale con particolare riguardo al diritto dell'Unione europea; certificazione in diritto costituzionale comparato; corsi completati in diritto internazionale privato. 30/30 in entrambi. Equipollenza attestata dalla Facoltà di Giurisprudenza della Goethe-Universität Frankfurt, 1999.</dd></div>
+      </dl>
+    </div>
+    <div class="pgroup">
+      <h3 data-en="The figures: what they measure" data-de="Die Zahlen: was sie messen">Le cifre: cosa misurano</h3>
+      <dl>
+        <div class="pair"><dt data-en="The €3M figure" data-de="Die Zahl von 3 Mio. €">La cifra di €3M</dt>
+          <dd data-en="A revision to a <b>projected</b> public-incentive benefit, obtained by verifying the applicable utilisation percentage against primary sources." data-de="Eine Korrektur einer <b>prognostizierten</b> Förderwirkung, gewonnen durch Prüfung des anwendbaren Inanspruchnahmesatzes an der Quelle.">È una rettifica di un beneficio agevolativo <b>previsto</b>, ottenuta verificando alla fonte la percentuale di fruizione applicabile.</dd></div>
+        <div class="pair"><dt data-en="€5M–€500M: individual notionals" data-de="5–500 Mio. €: Einzelnominale">€5M–€500M: nozionali singoli</dt>
+          <dd data-en="Institutional government-bond orders at Tullett Prebon (Securities) Ltd, 2001–2006. The range is the notional of an <b>individual order</b>." data-de="Institutionelle Staatsanleihe-Orders bei Tullett Prebon (Securities) Ltd, 2001–2006. Die Spanne bezeichnet das Nominal einer <b>einzelnen Order</b>.">Ordini istituzionali su titoli di Stato in Tullett Prebon (Securities) Ltd, 2001–2006. La forbice indica il nozionale del <b>singolo ordine</b>.</dd></div>
+        <div class="pair"><dt data-en="Eight companies: designed at feasibility stage" data-de="Acht Gesellschaften: in der Machbarkeitsphase entworfen">Otto società: progettate in fase di fattibilità</dt>
+          <dd data-en="The holding structure and the public-infrastructure partnership option were <b>designed</b> as a proposal, ready for the investment decision." data-de="Die Holdingstruktur und die Partnerschaftsoption für die öffentliche Infrastruktur wurden als Vorschlag <b>entworfen</b>, bereit für die Investitionsentscheidung.">La struttura della holding e l'opzione di partenariato per l'infrastruttura pubblica sono state <b>progettate</b> come proposta, pronte per la decisione di investimento.</dd></div>
+      </dl>
+    </div>
+    <div class="pgroup">
+      <h3 data-en="The technical and operating base" data-de="Die technische und operative Basis">La base tecnica e operativa</h3>
+      <dl>
+        <div class="pair"><dt data-en="Accounting systems and company accounts — the base the models rest on" data-de="Rechnungswesen und Bilanz — die Basis der Modelle">Sistemi contabili e bilancio — la base dei modelli</dt>
+          <dd data-en="SAP ERP FI/CO, 100/100 con lode; DATEV and Lexware, 97/100. It is the reason a ten-year model starts from the accounts: I know where the figures come from, how they were posted, and where they break." data-de="SAP ERP FI/CO, 100/100 mit Auszeichnung; DATEV und Lexware, 97/100. Deshalb beginnt ein Zehnjahresmodell bei der Bilanz: Ich weiß, woher die Zahlen kommen, wie sie gebucht wurden und wo sie brechen.">SAP ERP FI/CO, 100/100 con lode; DATEV e Lexware, 97/100. È la ragione per cui un modello a dieci anni parte dal bilancio: so da dove vengono i numeri, come sono stati registrati e dove si rompono.</dd></div>
+        <div class="pair"><dt data-en="Digital and AI work — built by me, and recent" data-de="Digital- und KI-Arbeit — von mir gebaut, und aktuell">Lavoro digitale e AI — costruito da me, di recente</dt>
+          <dd data-en="The Shopify storefront, the React and Next.js components and the MCP server — built in four weeks, converting storefront designs into W3C DTCG design tokens for Figma — are my own work, most recently in 2026. Two of the entities in the proposed Basilicata structure are AI platforms. I use AI as a tool and I have taken it into production." data-de="Der Shopify-Storefront, die React- und Next.js-Komponenten und der MCP-Server — in vier Wochen gebaut, überführt Storefront-Designs in W3C-DTCG-Design-Tokens für Figma — sind meine eigene Arbeit, zuletzt 2026. Zwei Einheiten der vorgeschlagenen Struktur für Basilikata sind KI-Plattformen. Ich nutze KI als Werkzeug und habe sie in den Produktivbetrieb gebracht.">Lo storefront Shopify, i componenti React e Next.js e il server MCP — costruito in quattro settimane, converte i design dello storefront in design token W3C DTCG per Figma — sono lavoro mio, da ultimo nel 2026. Nella struttura proposta per la Basilicata due entità sono piattaforme AI. Uso l'AI come strumento e l'ho portata in produzione.</dd></div>
+        <div class="pair"><dt data-en="MBOSS.US e.K. — founder and Creative Director; the brand restarts in Italy" data-de="MBOSS.US e.K. — Gründerin und Creative Director; die Marke startet in Italien neu">MBOSS.US e.K. — fondatrice e Direttrice Creativa; il marchio riparte in Italia</dt>
+          <dd data-en="Sustainable fashion and homeware. I <b>designed all 400 products in the catalogue and the entire e-commerce site</b> — from concept to finished product to shopfront. Supplier selection and negotiation, material compliance and traceability, positioning. Storefront and digital tools built in-house. The German business is on pause during my return to Italy: with the repatriation the brand restarts here, registered as an Italian startup." data-de="Nachhaltige Mode und Wohnaccessoires. Ich habe <b>alle 400 Produkte des Sortiments und die gesamte E-Commerce-Site entworfen</b> — vom Konzept über das fertige Produkt bis zum Schaufenster. Lieferantenauswahl und -verhandlung, Materialkonformität und Rückverfolgbarkeit, Positionierung. Storefront und digitale Werkzeuge in Eigenregie gebaut. Das deutsche Geschäft pausiert während meiner Rückkehr nach Italien: Mit der Rückkehr startet die Marke hier neu, eingetragen als italienisches Startup.">Moda e complementi d'arredo sostenibili. Ho <b>disegnato tutti i 400 prodotti del catalogo e l'intero sito e-commerce</b> — dal concept al prodotto finito alla vetrina. Selezione e negoziazione dei fornitori, conformità dei materiali e tracciabilità, posizionamento. Storefront e strumenti digitali costruiti in proprio. L'attività tedesca è in pausa durante il rientro in Italia: con il rimpatrio il marchio riparte da qui, registrato come startup italiana.</dd></div>
+      </dl>
+    </div>
+</div>
 
 </div>
 
 <footer><div class="wrap">
   <p><b>Maricla Martelli Kandzorra</b> · Via San Innocenzo 74, 75014 Grassano (MT) · +49 176 41365414 · <a href="mailto:maricla@mboss.us">maricla@mboss.us</a></p>
-  <p><a href="https://maximamaximum.github.io/maricla-martelli-kandzorra.github.io/" data-en="Curriculum vitae">Curriculum vitae</a> · <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">linkedin.com/in/maricla-martelli-kandzorra</a></p>
-  <p class="upd" data-en="A work sample is available on request: the Basilicata feasibility case study — corporate structure, financial model and assumptions, sensitivity analysis and the incentive-verification note.">Un campione di lavoro è disponibile su richiesta: il case study di fattibilità Basilicata — struttura societaria, modello finanziario e assunzioni, analisi di sensitività e nota di verifica dell'agevolazione.</p>
+  <p><a href="https://maximamaximum.github.io/maricla-martelli-kandzorra.github.io/">Curriculum vitae</a> · <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">linkedin.com/in/maricla-martelli-kandzorra</a></p>
+  <p class="upd" data-en="A work sample is available on request: the Basilicata feasibility case study — corporate structure, financial model and assumptions, sensitivity analysis and the incentive-verification note." data-de="Eine Arbeitsprobe ist auf Anfrage verfügbar: die Machbarkeits-Fallstudie Basilikata — Gesellschaftsstruktur, Finanzmodell und Annahmen, Sensitivitätsanalyse und die Notiz zur Förderprüfung.">Un campione di lavoro è disponibile su richiesta: il case study di fattibilità Basilicata — struttura societaria, modello finanziario e assunzioni, analisi di sensitività e nota di verifica dell'agevolazione.</p>
 </div></footer>
 
 <script>
 (function(){
-  /* ---- language toggle ---- */
-  var nodes = document.querySelectorAll('[data-en]');
+  var nodes=document.querySelectorAll('[data-en]');
   nodes.forEach(function(n){ n.setAttribute('data-it', n.innerHTML); });
-  var bIT=document.getElementById('bIT'), bEN=document.getElementById('bEN');
+  var story=document.getElementById('story');
+  var S={it:story.innerHTML, en:'<p>It begins on a trading floor. Frankfurt, 2001: institutional government-bond orders, notionals from five to five hundred million, and a London desk at the other end of the line every day for five and a half years. One thing is learned there, thoroughly: a number is worth exactly as much as the check behind it.</p>\n<p>Then the law, from the side of those who build the transactions. <b>Allen &amp; Overy</b> in Frankfurt, 2004: IPOs, rights issues, convertible bonds — the primary market. <b>HypoVereinsbank</b>: project finance. <b>DLA Piper</b>: project finance and banking supervision. Four participants, the same chain seen from every side. In between: the First State Examination, the traineeship at the Frankfurt Higher Regional Court, and the tax specialisation, passed at first attempt on cases to be resolved.</p>\n<p>Then the proof of being able to build things. <b>MBOSS.US e.K.</b>: 400 products designed, an entire e-commerce site, suppliers chosen and negotiated, materials certified and traced, digital tools written in-house — down to an MCP server built in four weeks.</p>\n<p>In <b>2026</b> all of it converges on a single engagement. A multi-site hospitality group in Basilicata: a holding with eight operating companies, a ten-year model with IRR, exit multiples and sensitivity analysis. The sizing shows how much fixed estate the project genuinely carries, and the scope is rebuilt accordingly. The ZES Unica incentive is verified at source, and the projected benefit revised by roughly three million while the document is still in progress.</p>\n<p class="close">Diagnosis, design, quantified plan, course correction: <b>the complete arc, on one case, documented.</b> That is what I bring into a consulting team.</p>', de:'<p>Es beginnt auf einem Handelsparkett. Frankfurt, 2001: institutionelle Staatsanleihe-Orders, Nominale von fünf bis fünfhundert Millionen, und fünfeinhalb Jahre lang täglich ein Londoner Desk am anderen Ende der Leitung. Dort lernt man eine Sache, und zwar gründlich: Eine Zahl ist genau so viel wert wie die Prüfung, die hinter ihr steht.</p>\n<p>Dann das Recht, von der Seite derer, die die Transaktionen bauen. <b>Allen &amp; Overy</b> in Frankfurt, 2004: IPOs, Kapitalerhöhungen, Wandelanleihen — der Primärmarkt. <b>HypoVereinsbank</b>: Projektfinanzierung. <b>DLA Piper</b>: Projektfinanzierung und Bankenaufsicht. Vier Marktteilnehmer, dieselbe Kette aus jeder Perspektive. Dazwischen das Erste Staatsexamen, das Referendariat am Oberlandesgericht Frankfurt und die steuerrechtliche Spezialisierung, im ersten Anlauf an zu lösenden Fällen bestanden.</p>\n<p>Dann der Beweis, Dinge auch bauen zu können. <b>MBOSS.US e.K.</b>: 400 entworfene Produkte, eine komplette E-Commerce-Site, ausgewählte und verhandelte Lieferanten, zertifizierte und rückverfolgbare Materialien, selbst geschriebene digitale Werkzeuge — bis hin zu einem MCP-Server, gebaut in vier Wochen.</p>\n<p><b>2026</b> läuft all das in einem einzigen Mandat zusammen. Eine Hotelgruppe mit mehreren Standorten in Basilikata: eine Holding mit acht operativen Gesellschaften, ein Zehnjahresmodell mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse. Die Dimensionierung zeigt, wie viel Fixkostenstruktur das Projekt wirklich trägt, und der Umfang wird entsprechend neu gebaut. Die Förderung ZES Unica wird an der Quelle geprüft und die prognostizierte Wirkung um rund drei Millionen korrigiert, während das Dokument noch in Arbeit ist.</p>\n<p class="close">Diagnose, Entwurf, quantifizierter Plan, Kurskorrektur: <b>der vollständige Bogen, an einem Fall, dokumentiert.</b> Das bringe ich in ein Beratungsteam ein.</p>'};
+  var B={it:document.getElementById('bIT'),en:document.getElementById('bEN'),de:document.getElementById('bDE')};
+  var lang='it';
   function setLang(l){
-    nodes.forEach(function(n){ n.innerHTML = n.getAttribute(l==='en'?'data-en':'data-it'); });
+    lang=l;
+    nodes.forEach(function(n){ n.innerHTML = n.getAttribute('data-'+l) || n.getAttribute('data-it'); });
+    story.innerHTML = S[l];
     document.documentElement.lang = l;
-    bIT.setAttribute('aria-pressed', l==='it'); bEN.setAttribute('aria-pressed', l==='en');
+    for(var k in B){ B[k].setAttribute('aria-pressed', k===l); }
     try{ localStorage.setItem('mmk-lang', l); }catch(e){}
+    apply();
   }
-  bIT.addEventListener('click', function(){ setLang('it'); });
-  bEN.addEventListener('click', function(){ setLang('en'); });
-  try{ var s=localStorage.getItem('mmk-lang'); if(s==='en') setLang('en'); }catch(e){}
+  for(var k in B){ (function(kk){ B[kk].addEventListener('click', function(){ setLang(kk); }); })(k); }
 
-  /* ---- role filter ---- */
   var chips=document.querySelectorAll('#chips .chip:not(#reset)'), reset=document.getElementById('reset');
   var items=document.querySelectorAll('[data-tracks]'), active=[];
+  var W={it:['competenze','di'],en:['skills','of'],de:['Kompetenzen','von']};
   function apply(){
     items.forEach(function(el){
       if(!active.length){ el.classList.remove('dim'); return; }
@@ -399,11 +375,10 @@ footer a{color:var(--blue)}
     document.querySelectorAll('.hitcount').forEach(function(c){
       var sec=document.getElementById(c.getAttribute('data-count')); if(!sec) return;
       var all=sec.querySelectorAll('[data-tracks]').length;
-      var lbl=(document.documentElement.lang==='en');
-      if(!active.length){ c.textContent = all+(lbl?' skills':' competenze'); return; }
-      c.textContent = sec.querySelectorAll('[data-tracks]:not(.dim)').length+' / '+all;
+      if(!active.length){ c.textContent=all+' '+W[lang][0]; return; }
+      c.textContent=sec.querySelectorAll('[data-tracks]:not(.dim)').length+' '+W[lang][1]+' '+all;
     });
-    reset.setAttribute('aria-pressed', !active.length);
+    reset.disabled = !active.length;
   }
   chips.forEach(function(ch){ ch.addEventListener('click', function(){
     var t=ch.getAttribute('data-t'), i=active.indexOf(t);
@@ -414,8 +389,7 @@ footer a{color:var(--blue)}
   reset.addEventListener('click', function(){
     active=[]; chips.forEach(function(c){ c.setAttribute('aria-pressed','false'); }); apply();
   });
-  bIT.addEventListener('click', apply); bEN.addEventListener('click', apply);
-  apply();
+  try{ var s=localStorage.getItem('mmk-lang'); if(s==='en'||s==='de') setLang(s); else apply(); }catch(e){ apply(); }
 })();
 </script>
 </body>
