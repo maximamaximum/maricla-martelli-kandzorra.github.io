@@ -3,98 +3,482 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Maricla Martelli Kandzorra — Curriculum vitae</title>
+<title>Maricla Martelli Kandzorra — CV</title>
 <meta name="description" content="Governance societaria · Fattibilità economico-finanziaria · Finanza agevolata. Giurista di formazione tedesca, provincia di Matera, disponibile dal 1° aprile 2027.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#1B6EC2;--dark:#1F4E79;--band:#F4F8FC;--line:#CBD8E6;--ink:#1c2630;--muted:#55636f;--faint:#8793a0}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 "Lato","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif}
-.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
-header{border-bottom:3px solid var(--dark);background:var(--band)}
-.hd{padding:30px 0 24px;position:relative}
-h1{margin:0;font-size:1.9rem;line-height:1.15;font-weight:700;color:var(--blue)}
-.role{margin:7px 0 0;font-size:1rem;color:var(--dark);font-weight:600}
-.meta{margin:13px 0 0;font-size:.89rem;color:var(--muted)}
-.meta b{color:var(--ink)}
-.links{margin:17px 0 0;display:flex;flex-wrap:wrap;gap:9px}
-.links a{display:inline-block;padding:7px 14px;border:1px solid var(--blue);border-radius:3px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600;background:#fff}
-.links a.primary{background:var(--blue);color:#fff}
-.lang{position:absolute;top:30px;right:22px;display:flex;border:1px solid var(--blue);border-radius:3px;overflow:hidden}
-.lang button{font:inherit;font-size:.8rem;font-weight:700;padding:5px 11px;border:0;border-left:1px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer}
-.lang button:first-child{border-left:0}
-.lang button[aria-pressed="true"]{background:var(--blue);color:#fff}
+  :root{
+    --blue:#1B6EC2;
+    --blue-dark:#1F4E79;
+    --ink:#262626;
+    --muted:#5A5A5A;
+    --rule:#1F4E79;
+    --bar:#9DC3E6;
+    --track:#DCDCDC;
+    --page:#FFFFFF;
+    --wrap:860px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:#EDEFF2;
+    color:var(--ink);
+    font-family:"Lato","Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+  }
+  .sheet{
+    max-width:var(--wrap);
+    margin:28px auto;
+    background:var(--page);
+    padding:44px 52px 56px;
+    box-shadow:0 2px 18px rgba(0,0,0,.10);
+  }
 
-.reader{padding:38px 0 10px}
-.book{position:relative;max-width:860px;margin:0 auto}
-.sheet{position:relative;background:#fff;border:1px solid var(--line);border-radius:3px 5px 5px 3px;
-  box-shadow:0 1px 2px rgba(31,78,121,.10), 0 14px 34px rgba(31,78,121,.16);margin:0 0 26px;overflow:hidden}
-.sheet:last-child{margin-bottom:0}
-.sheet:before{content:"";position:absolute;top:0;bottom:0;left:0;width:15px;z-index:2;pointer-events:none;
-  background:linear-gradient(90deg,#dae5f1 0,#edf3f9 55%,rgba(255,255,255,0) 100%);
-  border-right:1px solid var(--line)}
-.sheet:after{content:"";position:absolute;top:6px;bottom:6px;right:-6px;width:6px;z-index:-1;
-  background:repeating-linear-gradient(180deg,#fff 0 2px,#e7eef6 2px 3px);
-  border:1px solid var(--line);border-left:0;border-radius:0 4px 4px 0}
-.sheet img{display:block;width:100%;height:auto}
-.pno{position:absolute;right:10px;bottom:8px;z-index:3;font-size:.68rem;letter-spacing:.06em;
-  color:var(--faint);background:rgba(255,255,255,.88);padding:2px 7px;border-radius:2px}
-.under{max-width:860px;margin:26px auto 0;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.under p{margin:0;flex:1 1 280px;font-size:.84rem;color:var(--faint)}
-.dl{display:inline-block;padding:11px 26px;background:var(--blue);color:#fff;border-radius:3px;
-  text-decoration:none;font-size:.9rem;font-weight:700;letter-spacing:.01em}
-.dl:hover{background:var(--dark)}
-footer{margin-top:44px;border-top:3px solid var(--dark);background:var(--band);padding:22px 0 30px}
-footer p{margin:0 0 7px;font-size:.85rem;color:var(--muted)}
-footer a{color:var(--blue)}
+  /* ---------- language switch ---------- */
+  .lang{display:flex;gap:6px;flex:0 0 auto}
+  .lang button{
+    font:700 12px/1 "Lato","Segoe UI",Arial,sans-serif;
+    letter-spacing:.09em;
+    text-transform:uppercase;
+    padding:7px 13px;
+    border:1.5px solid var(--blue);
+    background:#fff;
+    color:var(--blue);
+    border-radius:2px;
+    cursor:pointer;
+  }
+  .lang button[aria-pressed="true"]{background:var(--blue);color:#fff}
+  body[data-lang="it"] [lang="en"],body[data-lang="it"] [lang="de"]{display:none}
+  body[data-lang="en"] [lang="it"],body[data-lang="en"] [lang="de"]{display:none}
+  body[data-lang="de"] [lang="it"],body[data-lang="de"] [lang="en"]{display:none}
+
+  /* ---------- header ---------- */
+  .head{display:flex;gap:26px;align-items:flex-start}
+  .head-main{flex:1 1 auto;min-width:0}
+  .titlebar{display:flex;align-items:flex-start;gap:18px}
+  h1{
+    font-size:33px;
+    line-height:1.1;
+    font-weight:900;
+    letter-spacing:.012em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:0 0 7px;
+    flex:1 1 auto;
+  }
+  .role{
+    font-size:16px;
+    font-weight:700;
+    letter-spacing:.015em;
+    color:var(--blue-dark);
+    margin:0 0 7px;
+  }
+  .contact{font-size:13.5px;color:var(--ink);margin:0;line-height:1.65}
+  .btns{margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+  .btns a{
+    display:inline-block;padding:7px 14px;border:1.5px solid var(--blue);
+    border-radius:2px;color:var(--blue);text-decoration:none;
+    font:700 12px/1 "Lato","Segoe UI",Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;
+  }
+  .btns a.primary{background:var(--blue);color:#fff}
+  .portrait{
+    width:126px;height:168px;flex:0 0 auto;
+    background:#E7EBF0;
+    border:1px solid #CBD3DC;
+    overflow:hidden;
+  }
+  .portrait img{width:100%;height:100%;object-fit:cover;display:block}
+
+  /* ---------- section headings ---------- */
+  h2{
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:.075em;
+    text-transform:uppercase;
+    color:var(--blue);
+    margin:26px 0 9px;
+    padding:5px 0 4px;
+    border-top:1.6px solid var(--rule);
+    border-bottom:1.6px solid var(--rule);
+  }
+
+  /* ---------- key numbers band ---------- */
+  .numbers{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1px;
+    background:#CBD8E6;
+    border:1px solid #CBD8E6;
+  }
+  .num{background:#F4F8FC;padding:11px 12px}
+  .num b{display:block;font-size:19px;font-weight:900;color:var(--blue);line-height:1.15}
+  .num span{display:block;font-size:11.5px;color:var(--muted);margin-top:3px;line-height:1.35}
+
+  /* ---------- entries ---------- */
+  .entry{margin:13px 0 0}
+  .entry-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+  .entry-title{font-weight:700;font-size:15px}
+  .entry-date{font-weight:700;font-size:14px;white-space:nowrap;color:var(--ink)}
+  ul{margin:5px 0 0;padding-left:19px}
+  li{margin:0 0 4px}
+  p{margin:0 0 9px;text-align:justify}
+  .lead{margin:9px 0 0;text-align:justify}
+  .skills{margin:9px 0 0;text-align:justify;font-size:14.5px}
+  .m{font-weight:700;color:var(--blue);white-space:nowrap}
+
+  /* ---------- education / certifications ---------- */
+  .ed{display:flex;gap:14px;margin:8px 0 0;align-items:baseline}
+  .ed-year{flex:0 0 78px;font-weight:700;color:var(--blue)}
+  .ed-body{flex:1 1 auto;text-align:justify}
+
+  /* ---------- languages ---------- */
+  .langs{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:11px}
+  .lrow .lname{font-size:13.5px;margin-bottom:4px}
+  .ltrack{height:9px;background:var(--track);position:relative}
+  .lfill{height:9px;background:var(--bar)}
+  .llevel{font-size:11.5px;color:var(--muted);text-align:right;margin-top:3px}
+
+  .foot{margin-top:22px;font-size:11.5px;color:var(--muted);font-style:italic}
+
+  @media (max-width:680px){
+    .sheet{padding:26px 20px 34px;margin:12px auto}
+    h1{font-size:25px}
+    .head{flex-direction:column-reverse;gap:16px}
+    .titlebar{flex-direction:column;gap:10px}
+    .portrait{width:110px;height:146px}
+    .langs{grid-template-columns:1fr}
+    .numbers{grid-template-columns:repeat(2,1fr)}
+    p,.lead,.skills,.ed-body{text-align:left}
+  }
+  @media print{
+    body{background:#fff}
+    .lang,.btns{display:none}
+    .sheet{margin:0;max-width:none;box-shadow:none;padding:0}
+    h2{break-after:avoid}
+    .entry,.ed{break-inside:avoid}
+  }
 </style>
 </head>
-<body>
+<body data-lang="it">
 
-<header><div class="wrap hd">
-  <div class="lang"><button id="bIT" aria-pressed="true">IT</button><button id="bEN" aria-pressed="false">EN</button><button id="bDE" aria-pressed="false">DE</button></div>
-  <h1>Maricla Martelli Kandzorra</h1>
-  <p class="role" data-en="Corporate governance · Financial feasibility · Public funding" data-de="Corporate Governance · Wirtschaftliche Machbarkeit · Fördermittel">Governance societaria · Fattibilità economico-finanziaria · Finanza agevolata</p>
-  <p class="meta" data-en="German-trained giurista · Native German and Italian, English C1 · Resident in the province of <b>Matera</b> · Available from <b>1 April 2027</b>" data-de="Juristin deutscher Ausbildung · Deutsch und Italienisch Muttersprache, Englisch C1 · Wohnsitz in der Provinz <b>Matera</b> · Verfügbar ab <b>1. April 2027</b>">Giurista di formazione tedesca · Madrelingua tedesca e italiana, inglese C1 · Residenza in provincia di <b>Matera</b> · Disponibile dal <b>1° aprile 2027</b></p>
-  <p class="links">
-    <a class="primary" href="skill-triage.html">Skills Triage</a>
-    <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">LinkedIn</a>
-    <a href="mailto:maricla@mboss.us">maricla@mboss.us</a>
-  </p>
-</div></header>
+<main class="sheet">
 
-<div class="wrap reader">
-  <div class="book" id="book">
-    <div class="sheet"><img id="pg1" src="page-it-1.jpg" alt="Curriculum vitae, pagina 1" width="1240" height="1754" fetchpriority="high"><span class="pno">1 / 2</span></div>
-    <div class="sheet"><img id="pg2" src="page-it-2.jpg" alt="Curriculum vitae, pagina 2" width="1240" height="1754" loading="lazy"><span class="pno">2 / 2</span></div>
+  <!-- ===================== HEADER ===================== -->
+  <div class="head">
+    <div class="head-main">
+      <div class="titlebar">
+        <h1>Maricla Martelli Kandzorra</h1>
+        <div class="lang">
+          <button id="b-it" aria-pressed="true" onclick="setLang('it')">IT</button>
+          <button id="b-en" aria-pressed="false" onclick="setLang('en')">EN</button>
+          <button id="b-de" aria-pressed="false" onclick="setLang('de')">DE</button>
+        </div>
+      </div>
+      <p class="role" lang="it">Governance societaria · Fattibilità economico-finanziaria · Finanza agevolata</p>
+      <p class="role" lang="en">Corporate governance · Financial feasibility · Public funding</p>
+      <p class="role" lang="de">Corporate Governance · Wirtschaftliche Machbarkeit · Fördermittel</p>
+      
+      <p class="contact" lang="it">Giurista di formazione tedesca · Madrelingua tedesca e italiana, inglese C1 · Residenza in provincia di <strong>Matera</strong> · Disponibile dal <strong>1° aprile 2027</strong></p>
+      <p class="contact" lang="en">German-trained giurista · Native German and Italian, English C1 · Resident in the province of <strong>Matera</strong> · Available from <strong>1 April 2027</strong></p>
+      <p class="contact" lang="de">Juristin deutscher Ausbildung · Deutsch und Italienisch Muttersprache, Englisch C1 · Wohnsitz in der Provinz <strong>Matera</strong> · Verfügbar ab <strong>1. April 2027</strong></p>
+      
+      <p class="btns">
+        <a class="primary" href="skill-triage.html">Skills Triage</a>
+        <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">LinkedIn</a>
+        <a href="mailto:maricla@mboss.us">maricla@mboss.us</a>
+      </p>
+    </div>
+    <div class="portrait"><img src="data:image/jpeg;base64,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" alt="Maricla Martelli Kandzorra"></div>
   </div>
-  <div class="under">
-    <p data-en="Curriculum vitae in PDF · Italian, English and German · updated November 2026" data-de="Lebenslauf als PDF · Italienisch, Englisch und Deutsch · Stand November 2026">Curriculum vitae in PDF · italiano, inglese e tedesco · aggiornato a novembre 2026</p>
-    <a class="dl" id="dl" href="cv-it.pdf" target="_blank" rel="noopener"><span data-en="Download" data-de="Download">Download</span></a>
-  </div>
-</div>
 
-<footer><div class="wrap">
-  <p><b>Maricla Martelli Kandzorra</b> · <a href="mailto:maricla@mboss.us">maricla@mboss.us</a> · <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">linkedin.com/in/maricla-martelli-kandzorra</a></p>
-  <p><a href="skill-triage.html">Skills Triage</a></p>
-</div></footer>
+  <!-- ===================== KEY NUMBERS ===================== -->
+  <h2 lang="it">Numeri chiave</h2>
+  <h2 lang="en">Key numbers</h2>
+  <h2 lang="de">Kennzahlen</h2>
+  
+  <div class="numbers">
+    <div class="num"><b>€5M–€500M</b><span lang="it">ordini istituzionali al giorno, titoli di Stato, 2001–2006</span><span lang="en">institutional orders per day, government bonds, 2001–2006</span><span lang="de">institutionelle Orders pro Tag, Staatsanleihen, 2001–2006</span></div>
+    <div class="num"><b>~€3M</b><span lang="it">rettifica dell'impatto ZES Unica dopo verifica alla fonte, 2026</span><span lang="en">ZES Unica benefit revised after verification at source, 2026</span><span lang="de">Korrektur der ZES-Unica-Wirkung nach Prüfung an der Quelle, 2026</span></div>
+    <div class="num"><b>8+1</b><span lang="it">società operative sotto holding, struttura disegnata nel 2026</span><span lang="en">operating companies under a holding, structure designed 2026</span><span lang="de">operative Gesellschaften unter einer Holding, Struktur 2026 entworfen</span></div>
+    <div class="num"><b lang="it">10 anni</b><b lang="en">10 years</b><b lang="de">10 Jahre</b><span lang="it">orizzonte del modello di cash flow, con IRR e sensitività</span><span lang="en">cash-flow model horizon, with IRR and sensitivity</span><span lang="de">Horizont des Cashflow-Modells, mit IRR und Sensitivität</span></div>
+    <div class="num"><b>100/100</b><span lang="it">SAP ERP FI/CO, con lode, 2011</span><span lang="en">SAP ERP FI/CO, with distinction, 2011</span><span lang="de">SAP ERP FI/CO, mit Auszeichnung, 2011</span></div>
+    <div class="num"><b>30/30</b><span lang="it">diritto internazionale e costituzionale comparato, Cattolica Milano, 1998–1999</span><span lang="en">international and comparative constitutional law, Cattolica Milan, 1998–1999</span><span lang="de">Völker- und vergleichendes Verfassungsrecht, Cattolica Mailand, 1998–1999</span></div>
+    <div class="num"><b lang="it">1.000+</b><b lang="en">1,000+</b><b lang="de">1.000+</b><span lang="it">pagine sull'Unione bancaria europea, 2013–2016</span><span lang="en">pages on the European Banking Union, 2013–2016</span><span lang="de">Seiten zur Europäischen Bankenunion, 2013–2016</span></div>
+    <div class="num"><b>400</b><span lang="it">prodotti disegnati e intero sito e-commerce, MBOSS.US e.K.</span><span lang="en">products designed and the entire e-commerce site, MBOSS.US e.K.</span><span lang="de">entworfene Produkte und die gesamte E-Commerce-Site, MBOSS.US e.K.</span></div>
+  </div>
+
+
+  <!-- ===================== PROFILE ===================== -->
+  <h2 lang="it">Profilo</h2>
+  <h2 lang="en">Profile</h2>
+  <h2 lang="de">Profil</h2>
+  
+  <p class="lead" lang="it">Giurista di formazione tedesca specializzata in <span class="m">finanza agevolata</span> e nelle strutture societarie che la rendono accessibile. Nel 2026 ho mappato gli strumenti agevolativi nazionali ed europei su un gruppo ricettivo multi-sito in <span class="m">Basilicata</span>, disegnato una holding con otto società operative perché ciascuna attività accedesse allo strumento adatto alla propria natura, e costruito il business plan a dieci anni con IRR, multipli di uscita e analisi di sensitività a sostegno della domanda. La verifica della <span class="m">ZES Unica</span> alla fonte, sulla percentuale di fruizione effettiva, ha rettificato l'impatto previsto di circa €3 milioni prima che il documento arrivasse a un investitore. Specializzazione in diritto tributario d'impresa accertata per esame, sei anni di negoziazione di titoli di Stato alla Borsa di Francoforte, e dal 2024 fondatrice e Direttrice Creativa di un marchio sostenibile costruito end-to-end. Madrelingua italiana e tedesca, inglese C1.</p>
+  <p class="lead" lang="en">German-trained jurist specialising in <span class="m">public funding</span> and the corporate structures that make it accessible. In 2026 I mapped Italian and EU incentive instruments across a multi-site hospitality group in <span class="m">Basilicata</span>, designed a holding with eight operating companies so each activity could reach the instrument matched to it, and built the ten-year business plan with IRR, exit multiples and sensitivity analysis in support of the application. Verifying the <span class="m">ZES Unica</span> incentive at source, on the actual utilisation percentage, revised the projected benefit by roughly €3M before the document reached an investor. Specialisation in corporate tax law established by examination, six years trading government bonds on the Frankfurt Stock Exchange, and since 2024 founder and Creative Director of a sustainable brand built end to end. Native Italian and German, English C1.</p>
+  <p class="lead" lang="de">Juristin deutscher Ausbildung mit Spezialisierung auf <span class="m">Fördermittel</span> und die Gesellschaftsstrukturen, die sie zugänglich machen. 2026 habe ich italienische und EU-Förderinstrumente über eine Hotelgruppe mit mehreren Standorten in <span class="m">Basilikata</span> kartiert, eine Holding mit acht operativen Gesellschaften entworfen, damit jede Tätigkeit das zu ihr passende Instrument erreicht, und den Zehnjahres-Businessplan mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse zur Untermauerung des Antrags erstellt. Die Prüfung der Förderung <span class="m">ZES Unica</span> an der Quelle, auf den tatsächlichen Inanspruchnahmesatz, korrigierte die prognostizierte Wirkung um rund 3 Mio. €, bevor das Dokument einen Investor erreichte. Durch Prüfung nachgewiesene Spezialisierung im Unternehmenssteuerrecht, sechs Jahre Handel mit Staatsanleihen an der Frankfurter Wertpapierbörse und seit 2024 Gründerin und Creative Director einer nachhaltigen Marke, durchgängig aufgebaut. Italienisch und Deutsch Muttersprache, Englisch C1.</p>
+  
+
+  <!-- ===================== SKILLS ===================== -->
+  <h2 lang="it">Competenze</h2>
+  <h2 lang="en">Skills</h2>
+  <h2 lang="de">Kompetenzen</h2>
+  
+  <p class="skills" lang="it">Finanza agevolata: ZES Unica, PNRR, bandi regionali, PPP · Disegno organizzativo e modelli di governance · Modellazione finanziaria e analisi di scenario · Dimensionamento quali-quantitativo · Analisi e riprogettazione di processi · Diritto tributario d'impresa e IVA UE · Contrattualistica e compliance · Gestione di stakeholder pubblici e privati · Strumenti di AI e sviluppo prodotto digitale · SAP FI/CO, DATEV, Lexware · Lean Startup, Design Thinking, Jobs-to-Be-Done · Italiano e tedesco madrelingua, inglese C1</p>
+  <p class="skills" lang="en">Public incentives: ZES Unica, PNRR, regional calls, PPP · Organisation design and governance models · Financial modelling and scenario analysis · Quali-quantitative sizing · Process analysis and reengineering · Corporate tax and EU VAT · Contracts and compliance · Managing public and private stakeholders · AI tooling and digital product development · SAP FI/CO, DATEV, Lexware · Lean Startup, Design Thinking, Jobs-to-Be-Done · Native Italian and German, English C1</p>
+  <p class="skills" lang="de">Fördermittel: ZES Unica, PNRR, regionale Ausschreibungen, ÖPP · Organisationsdesign und Governance-Modelle · Finanzmodellierung und Szenarioanalyse · Quali-quantitative Dimensionierung · Prozessanalyse und Reengineering · Unternehmenssteuerrecht und EU-Umsatzsteuer · Vertragsrecht und Compliance · Steuerung öffentlicher und privater Stakeholder · KI-Werkzeuge und digitale Produktentwicklung · SAP FI/CO, DATEV, Lexware · Lean Startup, Design Thinking, Jobs-to-Be-Done · Italienisch und Deutsch Muttersprache, Englisch C1</p>
+  
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <h2 lang="it">Esperienza professionale</h2>
+  <h2 lang="en">Professional experience</h2>
+  <h2 lang="de">Berufserfahrung</h2>
+  
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Progettazione e analisi di fattibilità — gruppo ricettivo multi-sito, Basilicata</span>
+      <span class="entry-title" lang="en">Design and feasibility analysis — multi-site hospitality group, Basilicata</span>
+      <span class="entry-title" lang="de">Konzeption und Machbarkeitsanalyse — Hotelgruppe mit mehreren Standorten, Basilikata</span>
+      <span class="entry-date">2026</span>
+    </div>
+    <ul lang="it">
+      <li>Mappati gli strumenti agevolativi nazionali ed europei su otto entità, e disegnata la struttura societaria perché ciascuna acceda allo strumento adatto alla propria attività: holding con 8 società operative, costi e agevolazioni allocati per entità, prezzi di trasferimento infragruppo analizzati.</li>
+      <li>Verificata l'agevolazione ZES Unica alla fonte, sulla percentuale di fruizione effettiva, con rettifica dell'impatto previsto di circa <span class="m">€3 milioni</span> prima che il documento arrivasse a un investitore.</li>
+      <li>Costruito il modello di cash flow a <span class="m">10 anni</span> con IRR, multipli di uscita e analisi di sensitività su costo di costruzione, costi fissi, occupazione, tariffa media e multiplo di uscita.</li>
+      <li>Rivisto il perimetro sulla base dei risultati, con il sito costiero riconfigurato come infrastruttura pubblica in partenariato, e quantificata a parte l'opzione di costruzione in due fasi: capex dell'Anno 0 da <span class="m">€23,0M a €19,3M</span>.</li>
+      <li>Documentati e quantificati i rischi: allocazione proporzionale del credito, sfasamento di 13 mesi fra completamento e incasso con picco di fabbisogno di €3,31M, scadenza del contratto di locazione all'uscita dell'Anno 10.</li>
+      <li>Documentazione a standard investitori in <span class="m">3 lingue</span>: italiano, inglese e tedesco.</li>
+    </ul>
+    <ul lang="en">
+      <li>Mapped Italian and EU incentive instruments across eight entities, and designed the corporate structure so each could apply for the instrument matched to its activity: a holding with 8 operating companies, costs and incentives allocated per entity, intercompany transfer pricing analysed.</li>
+      <li>Verified the ZES Unica incentive at source, on the actual utilisation percentage, revising the projected benefit by roughly <span class="m">€3M</span> before the document reached an investor.</li>
+      <li>Built the <span class="m">10-year</span> cash-flow model with IRR, exit multiples and sensitivity analysis across build cost, fixed cost, occupancy, average rate and exit multiple.</li>
+      <li>Rebuilt the scope on the findings, with the coastal site reconfigured as public infrastructure under a partnership, and quantified the two-stage build option separately: Year 0 capex from <span class="m">€23.0M to €19.3M</span>.</li>
+      <li>Documented and quantified the risks: proportional allocation of the credit, a 13-month lag between completion and receipt with a €3.31M peak cash need, the land lease expiring at the Year 10 exit.</li>
+      <li>Investor-standard documentation produced in <span class="m">3 languages</span>: Italian, English and German.</li>
+    </ul>
+    <ul lang="de">
+      <li>Italienische und EU-Förderinstrumente über acht Einheiten kartiert und die Gesellschaftsstruktur so entworfen, dass jede Einheit das zu ihrer Tätigkeit passende Instrument beantragen kann: Holding mit 8 operativen Gesellschaften, Kosten und Förderungen je Einheit zugeordnet, konzerninterne Verrechnungspreise analysiert.</li>
+      <li>Die Förderung ZES Unica an der Quelle geprüft, auf den tatsächlichen Inanspruchnahmesatz, und die prognostizierte Wirkung um rund <span class="m">3 Mio. €</span> korrigiert, bevor das Dokument einen Investor erreichte.</li>
+      <li>Zehnjähriges Cashflow-Modell mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse über Baukosten, Fixkosten, Auslastung, Durchschnittsrate und Exit-Multiplikator erstellt.</li>
+      <li>Den Umfang anhand der Befunde neu gebaut, den Küstenstandort als öffentliche Infrastruktur in Partnerschaft neu konfiguriert und die zweistufige Bauoption gesondert quantifiziert: Capex im Jahr 0 von 23,0 Mio. € auf 19,<span class="m">3 Mio. €</span>.</li>
+      <li>Risiken dokumentiert und quantifiziert: anteilige Zuteilung des Guthabens, 13 Monate Verzug zwischen Fertigstellung und Zufluss mit einem Spitzenbedarf von 3,31 Mio. €, Pachtvertrag mit Ablauf zum Exit im Jahr 10.</li>
+      <li>Unterlagen auf Investorenniveau in <span class="m">3 Sprachen</span>: Italienisch, Englisch und Deutsch.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Fondatrice e Direttrice Creativa — MBOSS.US e.K., Darmstadt</span>
+      <span class="entry-title" lang="en">Founder and Creative Director — MBOSS.US e.K., Darmstadt</span>
+      <span class="entry-title" lang="de">Gründerin und Creative Director — MBOSS.US e.K., Darmstadt</span>
+      <span class="entry-date">2024–2026</span>
+    </div>
+    <ul lang="it">
+      <li>Disegnati tutti i <span class="m">400 prodotti</span> del catalogo e l'intero sito e-commerce, dal concept al prodotto finito alla vetrina: moda e complementi d'arredo sostenibili.</li>
+      <li>Realizzata e gestita in proprio la piattaforma e-commerce su Shopify, Liquid, React e Next.js, con vendita diretta al consumatore.</li>
+      <li>Selezionati e negoziati produttori e artigiani certificati nel Regno Unito, con filiere conformi agli standard UE, fibre certificate OEKO-TEX, stampa GOTS ad acqua e piena tracciabilità.</li>
+      <li>Progettato e sviluppato in <span class="m">4 settimane</span> un server MCP che converte i design di vetrine Shopify in design token W3C DTCG per Figma.</li>
+      <li>L'attività tedesca è in pausa durante il rientro in Italia: con il rimpatrio il marchio riparte da qui, registrato come startup italiana.</li>
+    </ul>
+    <ul lang="en">
+      <li>Designed all <span class="m">400 products</span> in the catalogue and the entire e-commerce site, from concept to finished product to shopfront: sustainable fashion and homeware.</li>
+      <li>Built and ran the e-commerce platform myself on Shopify, Liquid, React and Next.js, selling direct to consumer.</li>
+      <li>Selected and negotiated with certified manufacturers and artisans in the UK, with EU-compliant supply chains, OEKO-TEX certified fibres, GOTS water-based printing and full traceability.</li>
+      <li>Designed and built an MCP server in <span class="m">4 weeks</span>, converting Shopify storefront designs into W3C DTCG design tokens for Figma.</li>
+      <li>The German business is on pause during my return to Italy: with the repatriation the brand restarts here, registered as an Italian startup.</li>
+    </ul>
+    <ul lang="de">
+      <li>Alle <span class="m">400 Produkte</span> des Sortiments und die gesamte E-Commerce-Site entworfen, vom Konzept über das fertige Produkt bis zum Schaufenster: nachhaltige Mode und Wohnaccessoires.</li>
+      <li>Die E-Commerce-Plattform auf Shopify, Liquid, React und Next.js selbst gebaut und betrieben, mit Direktvertrieb an Endkunden.</li>
+      <li>Zertifizierte Hersteller und Handwerksbetriebe im Vereinigten Königreich ausgewählt und verhandelt, mit EU-konformen Lieferketten, OEKO-TEX-zertifizierten Fasern, GOTS-Wasserdruck und vollständiger Rückverfolgbarkeit.</li>
+      <li>In <span class="m">4 Wochen</span> einen MCP-Server entworfen und gebaut, der Shopify-Storefront-Designs in W3C-DTCG-Design-Tokens für Figma überführt.</li>
+      <li>Das deutsche Geschäft pausiert während meiner Rückkehr nach Italien: Mit der Rückkehr startet die Marke hier neu, eingetragen als italienisches Startup.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Sviluppo startup — piattaforma di event design</span>
+      <span class="entry-title" lang="en">Startup development — event design platform</span>
+      <span class="entry-title" lang="de">Startup-Entwicklung — Event-Design-Plattform</span>
+      <span class="entry-date">2018–2022</span>
+    </div>
+    <ul lang="it">
+      <li>Prototipo su WordPress completato nel 2018/2019, documentato e pubblicato.</li>
+      <li>MVP con product-market fit nel 2020: piattaforma di ricerca avanzata geolocalizzata su Esri ArcGIS con dati cartografici NASA, per Francoforte e New York.</li>
+      <li>Riprogettata e ottimizzata nel 2022 su Next.js e React.</li>
+      <li>Prodotti business plan, conto economico previsionale, business model canvas e pitch deck.</li>
+    </ul>
+    <ul lang="en">
+      <li>WordPress prototype completed 2018/2019, documented and published.</li>
+      <li>MVP reaching product-market fit in 2020: a geocoded advanced-search platform on Esri ArcGIS with NASA map data, for Frankfurt and New York.</li>
+      <li>Rebuilt and optimised in 2022 on Next.js and React.</li>
+      <li>Produced the business plan, financial statement, business model canvas and pitch deck.</li>
+    </ul>
+    <ul lang="de">
+      <li>WordPress-Prototyp 2018/2019 fertiggestellt, dokumentiert und veröffentlicht.</li>
+      <li>MVP mit Product-Market-Fit im Jahr 2020: eine geokodierte Erweiterte-Suche-Plattform auf Esri ArcGIS mit NASA-Kartendaten, für Frankfurt und New York.</li>
+      <li>2022 auf Next.js und React neu gebaut und optimiert.</li>
+      <li>Businessplan, Erfolgsrechnung, Business Model Canvas und Pitch Deck erstellt.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Autrice e ricercatrice — opera sull'Unione bancaria europea</span>
+      <span class="entry-title" lang="en">Author and researcher — work on the European Banking Union</span>
+      <span class="entry-title" lang="de">Autorin und Forscherin — Werk zur Europäischen Bankenunion</span>
+      <span class="entry-date">2013–2016</span>
+    </div>
+    <ul lang="it">
+      <li>Ricerca e redazione di un'opera di oltre <span class="m">1.000 pagine</span> con apparato di note completo, su Unione bancaria, monetaria, economica, fiscale e dei mercati dei capitali.</li>
+      <li>Analisi normativa integrata con quadri micro e macroeconomici. Ricerca indipendente, condotta per iniziativa personale presso la Biblioteca di Diritto ed Economia della Goethe-Universität.</li>
+    </ul>
+    <ul lang="en">
+      <li>Researched and wrote a work of over <span class="m">1,000 pages</span>, fully footnoted, on the Banking, Monetary, Economic, Fiscal and Capital Markets Unions.</li>
+      <li>Regulatory analysis integrated with micro- and macroeconomic frameworks. Independent research, carried out on my own initiative at the Goethe University Library of Law and Finance.</li>
+    </ul>
+    <ul lang="de">
+      <li>Ein Werk von über <span class="m">1.000 Seiten</span> mit vollständigem Fußnotenapparat zur Banken-, Währungs-, Wirtschafts-, Fiskal- und Kapitalmarktunion recherchiert und verfasst.</li>
+      <li>Regulatorische Analyse, verbunden mit mikro- und makroökonomischen Rahmen. Unabhängige Forschung, aus eigener Initiative an der Bibliothek für Rechts- und Wirtschaftswissenschaften der Goethe-Universität durchgeführt.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Tirocinio forense e giudiziario (Rechtsreferendariat) — Corte d'Appello di Francoforte</span>
+      <span class="entry-title" lang="en">Legal traineeship (Rechtsreferendariat) — Higher Regional Court, Frankfurt</span>
+      <span class="entry-title" lang="de">Rechtsreferendariat — Oberlandesgericht Frankfurt am Main</span>
+      <span class="entry-date">2008–2011</span>
+    </div>
+    <ul lang="it">
+      <li>DLA Piper UK LLP, gruppo Finance &amp; Projects: pareri su regolamentazione finanziaria UE, project finance, M&amp;A e mercati dei capitali; due diligence e documentazione contrattuale, tra cui il parco eolico offshore BARD Offshore 1 / Ocean Breeze.</li>
+      <li>Ricercato e redatto l'articolo sulla riforma della normativa europea in materia di garanzia dei depositi, pubblicato in ZBB — Zeitschrift für Bankrecht und Bankwirtschaft 2/2010; menzionata nella pubblicazione, paternità confermata nel certificato ufficiale di tirocinio.</li>
+      <li>Corte d'Appello, sezioni diritto bancario e assicurativo: redazione di pareri e sentenze d'appello in cause con istruttoria complessa.</li>
+      <li>Procura di Francoforte, TAR di Francoforte, Camera di Commercio di Offenbach.</li>
+    </ul>
+    <ul lang="en">
+      <li>DLA Piper UK LLP, Finance &amp; Projects group: opinions on EU financial regulation, project finance, M&amp;A and capital markets; due diligence and contract documentation, including the BARD Offshore 1 / Ocean Breeze offshore wind farm.</li>
+      <li>Researched and drafted the article on the reform of EU deposit protection law published in ZBB — Zeitschrift für Bankrecht und Bankwirtschaft 2/2010; acknowledged in the publication, authorship confirmed in my official traineeship certificate.</li>
+      <li>Higher Regional Court, banking and insurance law senates: drafted opinions and appellate judgments in cases requiring extensive evidence analysis.</li>
+      <li>Frankfurt Prosecutor's Office, Frankfurt Administrative Court, Offenbach Chamber of Commerce.</li>
+    </ul>
+    <ul lang="de">
+      <li>DLA Piper UK LLP, Finance &amp; Projects: Gutachten zu EU-Finanzmarktregulierung, Projektfinanzierung, M&amp;A und Kapitalmärkten; Due Diligence und Vertragsdokumentation, darunter der Offshore-Windpark BARD Offshore 1 / Ocean Breeze.</li>
+      <li>Den Aufsatz zur Reform der europäischen Einlagensicherung recherchiert und verfasst, veröffentlicht in der ZBB — Zeitschrift für Bankrecht und Bankwirtschaft 2/2010; in der Veröffentlichung genannt, Urheberschaft im Referendariatszeugnis bestätigt.</li>
+      <li>Oberlandesgericht, Bank- und Versicherungsrechtssenate: Gutachten und Berufungsurteile in beweisintensiven Verfahren verfasst.</li>
+      <li>Staatsanwaltschaft Frankfurt, Verwaltungsgericht Frankfurt, IHK Offenbach.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Operatrice di borsa, titoli di Stato — Tullett Prebon (Securities) Ltd, Borsa di Francoforte</span>
+      <span class="entry-title" lang="en">Securities trader, government bonds — Tullett Prebon (Securities) Ltd, Frankfurt Stock Exchange</span>
+      <span class="entry-title" lang="de">Wertpapierhändlerin, Staatsanleihen — Tullett Prebon (Securities) Ltd, Frankfurter Wertpapierbörse</span>
+      <span class="entry-date">2001–2006</span>
+    </div>
+    <ul lang="it">
+      <li>Eseguiti ordini istituzionali su titoli di Stato tedeschi per clientela in Germania e Regno Unito, da <span class="m">€5 a €500 milioni</span> al giorno.</li>
+      <li>Referente diretta degli operatori di Londra durante il fixing; gestione autonoma degli ordini e della comunicazione con la clientela.</li>
+    </ul>
+    <ul lang="en">
+      <li>Executed institutional orders in German government bonds for clients in Germany and the UK, <span class="m">€5M to €500M</span> daily.</li>
+      <li>Primary contact for London traders during exchange fixing; managed client orders and communication independently.</li>
+    </ul>
+    <ul lang="de">
+      <li>Institutionelle Orders in deutschen Staatsanleihen für Kunden in Deutschland und Großbritannien ausgeführt, <span class="m">5 bis 500 Mio. €</span> täglich.</li>
+      <li>Direkte Ansprechpartnerin der Londoner Händler während des Börsenfixings; eigenständige Betreuung von Orders und Kundenkommunikation.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head">
+      <span class="entry-title" lang="it">Stage — HypoVereinsbank AG, filiale di Milano</span>
+      <span class="entry-title" lang="en">Internship — HypoVereinsbank AG, Milan branch</span>
+      <span class="entry-title" lang="de">Praktikum — HypoVereinsbank AG, Filiale Mailand</span>
+      <span class="entry-date">1999</span>
+    </div>
+    <ul lang="it">
+      <li>Project &amp; Structured Finance: istruttorie di fido, contratti e garanzie su infrastrutture finanziate dalla BEI, tra cui Air Liquide Sardegna; ricerca di settore sui mercati italiano ed europeo, in italiano, tedesco e inglese.</li>
+    </ul>
+    <ul lang="en">
+      <li>Project &amp; Structured Finance: credit applications, contracts and guarantees on EIB-financed infrastructure including Air Liquide Sardegna; sector research on Italian and European markets, in Italian, German and English.</li>
+    </ul>
+    <ul lang="de">
+      <li>Project &amp; Structured Finance: Kreditanträge, Verträge und Sicherheiten zu EIB-finanzierten Infrastrukturen, darunter Air Liquide Sardegna; Branchenrecherche zu italienischen und europäischen Märkten, auf Italienisch, Deutsch und Englisch.</li>
+    </ul>
+  </div>
+
+
+  <!-- ===================== EDUCATION ===================== -->
+  <h2 lang="it">Formazione</h2>
+  <h2 lang="en">Education</h2>
+  <h2 lang="de">Ausbildung</h2>
+  
+  <div class="ed"><div class="ed-year">2013</div><div class="ed-body" lang="it">Fachanwaltslehrgang Steuerrecht — specializzazione accertata per esame, superata al primo tentativo. Deutsche AnwaltAkademie / Fachseminare von Fürstenberg. Casi da risolvere su diritto tributario societario, IVA UE, imposte su trasferimenti immobiliari, successioni e fiscalità internazionale, Bewertungsgesetz e Immobilienbewertungsrichtlinie.</div><div class="ed-body" lang="en">Fachanwaltslehrgang Steuerrecht — specialisation established by examination, passed at first attempt. Deutsche AnwaltAkademie / Fachseminare von Fürstenberg. Cases to be resolved on corporate tax, EU VAT, real estate transfer tax, inheritance and international taxation, the Bewertungsgesetz and the Immobilienbewertungsrichtlinie.</div><div class="ed-body" lang="de">Fachanwaltslehrgang Steuerrecht — Spezialisierung durch Prüfung nachgewiesen, im ersten Anlauf bestanden. Deutsche AnwaltAkademie / Fachseminare von Fürstenberg. Zu lösende Fälle zu Unternehmenssteuerrecht, EU-Umsatzsteuer, Grunderwerbsteuer, Erbschaft- und internationaler Besteuerung, Bewertungsgesetz und Immobilienbewertungsrichtlinie.</div></div>
+  <div class="ed"><div class="ed-year">2012</div><div class="ed-body" lang="it">Corso intensivo per contabili, Steuer-Fachschule Dr. Endriss, Francoforte.</div><div class="ed-body" lang="en">Intensive accountancy course, Steuer-Fachschule Dr. Endriss, Frankfurt.</div><div class="ed-body" lang="de">Intensivkurs Finanzbuchhaltung, Steuer-Fachschule Dr. Endriss, Frankfurt.</div></div>
+  <div class="ed"><div class="ed-year">2011</div><div class="ed-body" lang="it">SAP ERP FI/CO (100/100, con lode), DATEV Rechnungswesen pro e Lexware (97/100), Alfatraining Francoforte.</div><div class="ed-body" lang="en">SAP ERP FI/CO (100/100, with distinction), DATEV Rechnungswesen pro and Lexware (97/100), Alfatraining Frankfurt.</div><div class="ed-body" lang="de">SAP ERP FI/CO (100/100, mit Auszeichnung), DATEV Rechnungswesen pro und Lexware (97/100), Alfatraining Frankfurt.</div></div>
+  <div class="ed"><div class="ed-year">2008</div><div class="ed-body" lang="it">Primo Esame di Stato in giurisprudenza, Ministero della Giustizia dell'Assia. Ammessa al Secondo Esame di Stato nel 2010 e nel 2011.</div><div class="ed-body" lang="en">First State Examination in Law, Hessian Ministry of Justice. Admitted to the Second State Examination in 2010 and in 2011.</div><div class="ed-body" lang="de">Erstes Juristisches Staatsexamen, Hessisches Ministerium der Justiz. 2010 und 2011 zum Zweiten Staatsexamen zugelassen.</div></div>
+  <div class="ed"><div class="ed-year">2001</div><div class="ed-body" lang="it">Esame di operatore di borsa, Borsa di Francoforte, abilitazione alla negoziazione inclusa XETRA.</div><div class="ed-body" lang="en">Securities trader examination, Frankfurt Stock Exchange, including XETRA.</div><div class="ed-body" lang="de">Wertpapierhändlerprüfung, Frankfurter Wertpapierbörse, einschließlich XETRA.</div></div>
+  <div class="ed"><div class="ed-year">1998–1999</div><div class="ed-body" lang="it">Università Cattolica del Sacro Cuore, Milano. Specializzazione in Diritto internazionale, con particolare riguardo al diritto dell'Unione europea, e in Diritto costituzionale comparato; corsi completati in Diritto internazionale privato. 30/30 in entrambe le certificazioni, dichiarate equipollenti nel 1999 dalla Facoltà di Giurisprudenza della Goethe-Universität di Francoforte.</div><div class="ed-body" lang="en">Università Cattolica del Sacro Cuore, Milan. Specialisation in International Law, with particular focus on European Union law, and in Comparative Constitutional Law; completed courses in Private International Law. 30/30 in both certifications, declared equivalent in 1999 by the Goethe University Frankfurt Faculty of Law.</div><div class="ed-body" lang="de">Università Cattolica del Sacro Cuore, Mailand. Spezialisierung im Völkerrecht mit Schwerpunkt Europarecht sowie im vergleichenden Verfassungsrecht; abgeschlossene Kurse im Internationalen Privatrecht. 30/30 in beiden Zertifikaten, 1999 vom Fachbereich Rechtswissenschaft der Goethe-Universität Frankfurt als gleichwertig anerkannt.</div></div>
+  <div class="ed"><div class="ed-year">1994–2004</div><div class="ed-body" lang="it">Studi di giurisprudenza, Goethe-Universität Frankfurt am Main.</div><div class="ed-body" lang="en">Law studies, Goethe-Universität Frankfurt am Main.</div><div class="ed-body" lang="de">Studium der Rechtswissenschaft, Goethe-Universität Frankfurt am Main.</div></div>
+
+  <!-- ===================== CERTIFICATIONS ===================== -->
+  <h2 lang="it">Certificazioni online</h2>
+  <h2 lang="en">Online certifications</h2>
+  <h2 lang="de">Online-Zertifikate</h2>
+  
+  <div class="ed"><div class="ed-year">2025</div><div class="ed-body" lang="it">Wharton, University of Pennsylvania — FinTech: Foundations, Payments and Regulations (97,5%) · University of Michigan — Innovations in Investment Technology: AI (100%) e Raising Capital (96%).</div><div class="ed-body" lang="en">Wharton, University of Pennsylvania — FinTech: Foundations, Payments and Regulations (97.5%) · University of Michigan — Innovations in Investment Technology: AI (100%) and Raising Capital (96%).</div><div class="ed-body" lang="de">Wharton, University of Pennsylvania — FinTech: Foundations, Payments and Regulations (97,5 %) · University of Michigan — Innovations in Investment Technology: AI (100 %) und Raising Capital (96 %).</div></div>
+  <div class="ed"><div class="ed-year">2024</div><div class="ed-body" lang="it">Università Bocconi — Management of Fashion and Luxury Companies · Google — Foundations of Digital Marketing and E-commerce.</div><div class="ed-body" lang="en">Università Bocconi — Management of Fashion and Luxury Companies · Google — Foundations of Digital Marketing and E-commerce.</div><div class="ed-body" lang="de">Università Bocconi — Management of Fashion and Luxury Companies · Google — Foundations of Digital Marketing and E-commerce.</div></div>
+
+  <!-- ===================== LANGUAGES ===================== -->
+  <h2 lang="it">Lingue</h2>
+  <h2 lang="en">Languages</h2>
+  <h2 lang="de">Sprachen</h2>
+  
+  <div class="langs">
+    <div class="lrow">
+      <div class="lname" lang="it">Italiano</div><div class="lname" lang="en">Italian</div><div class="lname" lang="de">Italienisch</div>
+      <div class="ltrack"><div class="lfill" style="width:100%"></div></div>
+      <div class="llevel" lang="it">Madrelingua</div><div class="llevel" lang="en">Native</div><div class="llevel" lang="de">Muttersprache</div>
+    </div>
+    <div class="lrow">
+      <div class="lname" lang="it">Tedesco</div><div class="lname" lang="en">German</div><div class="lname" lang="de">Deutsch</div>
+      <div class="ltrack"><div class="lfill" style="width:100%"></div></div>
+      <div class="llevel" lang="it">Madrelingua</div><div class="llevel" lang="en">Native</div><div class="llevel" lang="de">Muttersprache</div>
+    </div>
+    <div class="lrow">
+      <div class="lname" lang="it">Inglese</div><div class="lname" lang="en">English</div><div class="lname" lang="de">Englisch</div>
+      <div class="ltrack"><div class="lfill" style="width:82%"></div></div>
+      <div class="llevel">C1</div>
+    </div>
+  </div>
+
+  <p class="foot" lang="it">Autorizzo il trattamento dei miei dati personali ai sensi del Reg. UE 2016/679 (GDPR) e del D.Lgs. 196/2003.</p>
+  <p class="foot" lang="en">I consent to the processing of my personal data under Reg. EU 2016/679 (GDPR) and Italian Legislative Decree 196/2003.</p>
+  <p class="foot" lang="de">Ich willige in die Verarbeitung meiner personenbezogenen Daten nach VO (EU) 2016/679 (DSGVO) und dem Gesetzesdekret 196/2003 ein.</p>
+  
+</main>
 
 <script>
-(function(){
-  var nodes=document.querySelectorAll('[data-en]');
-  nodes.forEach(function(n){ n.setAttribute('data-it', n.innerHTML); });
-  var B={it:document.getElementById('bIT'),en:document.getElementById('bEN'),de:document.getElementById('bDE')};
-  var pg1=document.getElementById('pg1'), pg2=document.getElementById('pg2'), dl=document.getElementById('dl');
   function setLang(l){
-    nodes.forEach(function(n){ n.innerHTML = n.getAttribute('data-'+l) || n.getAttribute('data-it'); });
+    document.body.dataset.lang = l;
     document.documentElement.lang = l;
-    for(var k in B){ B[k].setAttribute('aria-pressed', k===l); }
-    pg1.src='page-'+l+'-1.jpg'; pg2.src='page-'+l+'-2.jpg';
-    dl.setAttribute('href', 'cv-'+l+'.pdf');
-    try{ localStorage.setItem('mmk-lang', l); }catch(e){}
+    ['it','en','de'].forEach(function(k){
+      document.getElementById('b-'+k).setAttribute('aria-pressed', k === l);
+    });
+    try { localStorage.setItem('mmk-lang', l); } catch (e) {}
   }
-  for(var k in B){ (function(kk){ B[kk].addEventListener('click', function(){ setLang(kk); }); })(k); }
-  try{ var s=localStorage.getItem('mmk-lang'); if(s==='en'||s==='de') setLang(s); }catch(e){}
-})();
+  try {
+    var saved = localStorage.getItem('mmk-lang');
+    if (saved === 'it' || saved === 'en' || saved === 'de') setLang(saved);
+  } catch (e) {}
 </script>
 </body>
 </html>
