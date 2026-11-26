@@ -142,6 +142,35 @@
   .lfill{height:9px;background:var(--bar)}
   .llevel{font-size:11.5px;color:var(--muted);text-align:right;margin-top:3px}
 
+  /* ---------- download bar ---------- */
+  .dlbar{margin:26px 0 0;padding:15px 0 0;border-top:1.6px solid var(--rule)}
+  .dlbar .dllab{font-size:11.5px;letter-spacing:.075em;text-transform:uppercase;font-weight:700;color:var(--blue);margin:0 0 9px}
+  .dlrow{display:flex;flex-wrap:wrap;gap:10px}
+  .dlbtn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:10px 18px;border:1.5px solid var(--blue);border-radius:2px;
+    background:var(--blue);color:#fff;text-decoration:none;cursor:pointer;
+    font:700 12px/1 "Lato","Segoe UI",Arial,sans-serif;letter-spacing:.07em;text-transform:uppercase;
+  }
+  .dlbtn:hover{background:var(--blue-dark);border-color:var(--blue-dark)}
+  .dlbtn svg{width:14px;height:14px;flex:0 0 auto;fill:currentColor}
+  .dlbtn .tag{font-weight:900;opacity:.75}
+
+  /* ---------- thank you + confetti ---------- */
+  #confetti{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:60}
+  .cfp{position:absolute;top:-14px;width:9px;height:14px;opacity:.95;will-change:transform}
+  @keyframes cffall{to{transform:translateY(104vh) rotate(760deg)}}
+  .thanks{
+    position:fixed;left:50%;top:22%;transform:translate(-50%,-14px);z-index:70;
+    max-width:min(430px,88vw);background:#fff;border:1px solid #CBD3DC;border-top:4px solid var(--blue);
+    box-shadow:0 18px 46px rgba(31,78,121,.26);padding:26px 30px 28px;text-align:center;
+    opacity:0;pointer-events:none;transition:opacity .35s ease, transform .35s ease;
+  }
+  .thanks.on{opacity:1;transform:translate(-50%,0)}
+  .thanks .hand{font-size:40px;line-height:1;margin:0 0 10px}
+  .thanks p{margin:0;font-size:15.5px;line-height:1.5;color:var(--ink);text-align:center;font-weight:700}
+  @media print{.dlbar,.thanks,#confetti{display:none}}
+
   .foot{margin-top:22px;font-size:11.5px;color:var(--muted);font-style:italic}
 
   @media (max-width:680px){
@@ -460,6 +489,22 @@
     </div>
   </div>
 
+  <!-- ===================== DOWNLOAD ===================== -->
+  <div class="dlbar">
+    <p class="dllab" lang="it">Scarica il curriculum</p><p class="dllab" lang="en">Download the curriculum</p><p class="dllab" lang="de">Lebenslauf herunterladen</p>
+    <div class="dlrow">
+      <a class="dlbtn" href="cv-it.pdf" download data-dl="it"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg><span lang="it">Download</span><span lang="en">Download</span><span lang="de">Download</span> <span class="tag">IT</span></a>
+      <a class="dlbtn" href="cv-en.pdf" download data-dl="en"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg><span lang="it">Download</span><span lang="en">Download</span><span lang="de">Download</span> <span class="tag">EN</span></a>
+      <a class="dlbtn" href="cv-de.pdf" download data-dl="de"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v9.59l3.3-3.3a1 1 0 0 1 1.4 1.42l-5 5a1 1 0 0 1-1.4 0l-5-5a1 1 0 1 1 1.4-1.42l3.3 3.3V4a1 1 0 0 1 1-1Zm-7 15a1 1 0 0 1 1-1h12a1 1 0 1 1 0 2H6a1 1 0 0 1-1-1Z"/></svg><span lang="it">Download</span><span lang="en">Download</span><span lang="de">Download</span> <span class="tag">DE</span></a>
+    </div>
+  </div>
+
+  <div id="confetti" aria-hidden="true"></div>
+  <div class="thanks" id="thanks" role="status" aria-live="polite">
+    <div class="hand">&#128079;</div>
+    <p><span lang="it">Grazie per l'interesse, attendo con piacere il vostro invito a un colloquio!</span><span lang="en">Thank you for your interest, I am looking forward to be invited by your company!</span><span lang="de">Vielen Dank für Ihr Interesse, ich freue mich auf eine Einladung in Ihr Unternehmen!</span></p>
+  </div>
+
   <p class="foot" lang="it">Autorizzo il trattamento dei miei dati personali ai sensi del Reg. UE 2016/679 (GDPR) e del D.Lgs. 196/2003.</p>
   <p class="foot" lang="en">I consent to the processing of my personal data under Reg. EU 2016/679 (GDPR) and Italian Legislative Decree 196/2003.</p>
   <p class="foot" lang="de">Ich willige in die Verarbeitung meiner personenbezogenen Daten nach VO (EU) 2016/679 (DSGVO) und dem Gesetzesdekret 196/2003 ein.</p>
@@ -475,6 +520,36 @@
     });
     try { localStorage.setItem('mmk-lang', l); } catch (e) {}
   }
+
+  var CFC = ['#1B6EC2','#1F4E79','#9DC3E6','#F2C14E','#E86A5B','#5FB49C','#FFFFFF'];
+  function confetti(n){
+    var box = document.getElementById('confetti');
+    for (var i = 0; i < n; i++){
+      var d = document.createElement('div');
+      d.className = 'cfp';
+      var dur = 2.6 + Math.random() * 2.2;
+      d.style.left = (Math.random() * 100) + 'vw';
+      d.style.background = CFC[(Math.random() * CFC.length) | 0];
+      d.style.width = (6 + Math.random() * 7) + 'px';
+      d.style.height = (9 + Math.random() * 10) + 'px';
+      if (Math.random() < 0.3) d.style.borderRadius = '50%';
+      d.style.animation = 'cffall ' + dur.toFixed(2) + 's linear ' + (Math.random() * 0.9).toFixed(2) + 's forwards';
+      box.appendChild(d);
+      (function(el, ms){ setTimeout(function(){ el.remove(); }, ms); })(d, (dur + 1.2) * 1000);
+    }
+  }
+  var thankTimer;
+  function celebrate(){
+    confetti(130);
+    var t = document.getElementById('thanks');
+    t.classList.add('on');
+    clearTimeout(thankTimer);
+    thankTimer = setTimeout(function(){ t.classList.remove('on'); }, 7000);
+  }
+  document.querySelectorAll('[data-dl]').forEach(function(a){
+    a.addEventListener('click', function(){ celebrate(); });
+  });
+
   try {
     var saved = localStorage.getItem('mmk-lang');
     if (saved === 'it' || saved === 'en' || saved === 'de') setLang(saved);
