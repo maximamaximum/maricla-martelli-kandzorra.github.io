@@ -1,1 +1,200 @@
-
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proposta di collaborazione — Maricla Martelli Kandzorra</title>
+<meta name="description" content="Diagnosi, disegno, piano quantificato, correzione di rotta: l'arco completo, su un caso, documentato. Cinque ambiti di consulenza. Disponibile dal 1° aprile 2027.">
+<style>
+:root{--blue:#1B6EC2;--dark:#1F4E79;--band:#F4F8FC;--line:#CBD8E6;--ink:#1c2630;--muted:#55636f;--faint:#8793a0;--green:#2e7d64}
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:var(--ink);font:16px/1.6 "Lato","Segoe UI",-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+header{border-bottom:3px solid var(--dark);background:var(--band)}
+.hd{padding:30px 0 24px;position:relative}
+h1{margin:0;font-size:1.9rem;line-height:1.15;font-weight:700;color:var(--blue)}
+.role{margin:7px 0 0;font-size:1rem;color:var(--dark);font-weight:600}
+.meta{margin:13px 0 0;font-size:.89rem;color:var(--muted)}
+.meta b{color:var(--ink)}
+.links{margin:17px 0 0;display:flex;flex-wrap:wrap;gap:9px}
+.links a{display:inline-block;padding:7px 14px;border:1px solid var(--blue);border-radius:3px;color:var(--blue);text-decoration:none;font-size:.85rem;font-weight:600;background:#fff}
+.links a.primary{background:var(--blue);color:#fff}
+.lang{position:absolute;top:30px;right:22px;display:flex;border:1px solid var(--blue);border-radius:3px;overflow:hidden}
+.lang button{font:inherit;font-size:.8rem;font-weight:700;padding:5px 11px;border:0;border-left:1px solid var(--blue);background:#fff;color:var(--blue);cursor:pointer}
+.lang button:first-child{border-left:0}
+.lang button[aria-pressed="true"]{background:var(--blue);color:#fff}
+ 
+.headline{padding:34px 0 0;max-width:82ch}
+.headline .kicker{margin:0 0 6px;font-size:.76rem;letter-spacing:.1em;text-transform:uppercase;color:var(--green);font-weight:700}
+.headline h2{margin:0;font-size:1.62rem;line-height:1.22;font-weight:700;color:var(--dark);letter-spacing:-.2px}
+.headline .sub{margin:13px 0 0;font-size:1.01rem;color:var(--muted)}
+section{padding:32px 0 4px;border-top:1px solid var(--line);margin-top:32px}
+h2.st{margin:0 0 4px;font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--dark)}
+.sdesc{margin:9px 0 0;font-size:.92rem;color:var(--muted);max-width:82ch}
+.roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px;margin:20px 0 0}
+.rcard{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:3px;padding:18px 20px;background:#fff}
+.rcard h3{margin:0 0 7px;font-size:1.02rem;font-weight:700;color:var(--dark)}
+.rcard p{margin:0 0 11px;font-size:.88rem;color:var(--muted)}
+.rcard p.evlab{margin:0 0 5px;font-size:.68rem;letter-spacing:.09em;text-transform:uppercase;color:var(--green);font-weight:700}
+.rcard ul{margin:0;padding-left:18px}
+.rcard li{font-size:.855rem;color:var(--ink);margin:0 0 5px}
+.evs{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin:20px 0 0}
+.ev{background:var(--band);padding:13px 15px}
+.ev b{display:block;font-size:1.26rem;font-weight:700;color:var(--blue);line-height:1.15}
+.ev span{display:block;font-size:.78rem;color:var(--muted);margin-top:4px;line-height:1.4}
+.why{margin:20px 0 0;padding:18px 21px;border-left:3px solid var(--green);background:#f3f8f6;border-radius:0 4px 4px 0;max-width:84ch}
+.why p{margin:0;font-size:.95rem;color:var(--ink)}
+.why p+p{margin-top:10px}
+.qs{margin:20px 0 0;padding:0 0 0 22px;max-width:82ch}
+.qs li{font-size:.97rem;margin:0 0 9px;color:var(--ink)}
+.close{margin:34px 0 0;padding:21px 23px;background:var(--band);border:1px solid var(--line);border-radius:4px;max-width:84ch}
+.close p{margin:0;font-size:.95rem;color:var(--ink)}
+.close p+p{margin-top:10px;font-size:.88rem;color:var(--muted)}
+footer{margin-top:42px;border-top:3px solid var(--dark);background:var(--band);padding:24px 0 32px}
+footer p{margin:0 0 7px;font-size:.85rem;color:var(--muted)}
+footer a{color:var(--blue)}
+@media (max-width:720px){.evs{grid-template-columns:repeat(2,1fr)}}
+@media print{.links,.lang{display:none}body{font-size:11pt}section{break-inside:avoid}}
+</style>
+</head>
+<body>
+ 
+<header><div class="wrap hd">
+  <div class="lang"><button id="bIT" aria-pressed="true">IT</button><button id="bEN" aria-pressed="false">EN</button><button id="bDE" aria-pressed="false">DE</button></div>
+  <h1>Maricla Martelli Kandzorra</h1>
+  <p class="role" data-en="Corporate governance · Financial feasibility · Public funding" data-de="Corporate Governance · Wirtschaftliche Machbarkeit · Fördermittel">Governance societaria · Fattibilità economico-finanziaria · Finanza agevolata</p>
+  <p class="meta" data-en="German-trained giurista · Native German and Italian, English C1 · Resident in the province of <b>Matera</b> · Available from <b>1 April 2027</b>" data-de="Juristin deutscher Ausbildung · Deutsch und Italienisch Muttersprache, Englisch C1 · Wohnsitz in der Provinz <b>Matera</b> · Verfügbar ab <b>1. April 2027</b>">Giurista di formazione tedesca · Madrelingua tedesca e italiana, inglese C1 · Residenza in provincia di <b>Matera</b> · Disponibile dal <b>1° aprile 2027</b></p>
+  <p class="links">
+    <a class="primary" href="skill-triage.html">Skills Triage</a>
+    <a href="curriculum-vitae.html">Curriculum vitae</a>
+    <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">LinkedIn</a>
+    <a href="mailto:maricla@mboss.us">maricla@mboss.us</a>
+  </p>
+</div></header>
+ 
+<div class="wrap">
+ 
+<div class="headline">
+  <p class="kicker" data-en="Proposal of collaboration" data-de="Vorschlag zur Zusammenarbeit">Proposta di collaborazione</p>
+  <h2 data-en="Diagnosis, design, quantified plan, course correction: the complete arc, on one case, documented." data-de="Diagnose, Entwurf, quantifizierter Plan, Kurskorrektur: der vollständige Bogen, an einem Fall, dokumentiert.">Diagnosi, disegno, piano quantificato, correzione di rotta: l'arco completo, su un caso, documentato.</h2>
+  <p class="sub" data-en="That is what I bring into a consulting team, and below are the five areas where I bring it. Each is carried by recent, documented work: beside every area stands the evidence, with the figure and the date. The Skills Triage orders the same material across four tiers and filters by these same five areas, so you can see the evidence behind each individual capability." data-de="Das bringe ich in ein Beratungsteam ein, und unten stehen die fünf Bereiche, in denen ich es einbringe. Jeder beruht auf aktueller, dokumentierter Arbeit: neben jedem Bereich steht der Beleg, mit Zahl und Datum. Die Skills Triage ordnet dasselbe Material in vier Ebenen und filtert nach denselben fünf Bereichen, sodass Sie den Beleg hinter jeder einzelnen Kompetenz sehen.">È questo che porto dentro un team di consulenza, e sotto trovate i cinque ambiti in cui lo porto. Ciascuno è sostenuto da lavoro recente e documentato: accanto a ogni ambito sta la prova, con la cifra e la data. La Skills Triage ordina lo stesso materiale su quattro livelli e si filtra per gli stessi cinque ambiti, così potete vedere l'evidenza dietro ogni singola competenza.</p>
+</div>
+ 
+<section>
+  <h2 class="st" data-en="The five areas" data-de="Die fünf Bereiche">I cinque ambiti</h2>
+  <p class="sdesc" data-en="The same five the Skills Triage filters by. Choose the one you are hiring for and that page reorders around you." data-de="Dieselben fünf, nach denen die Skills Triage filtert. Wählen Sie den Bereich, für den Sie einstellen, und die Seite ordnet sich um Sie herum.">Gli stessi cinque per cui si filtra la Skills Triage. Scegliete quello per cui assumete e la pagina si riordina intorno a voi.</p>
+  <div class="roles">
+    <article class="rcard">
+      <h3 data-en="Organisation design and governance" data-de="Organisationsdesign und Governance">Organization design e governance</h3>
+      <p data-en="Design of organisational and governance models, evolution of operating models, quali-quantitative sizing analysis and rightsizing models." data-de="Entwurf von Organisations- und Governance-Modellen, Weiterentwicklung der Betriebsmodelle, quali-quantitative Dimensionierung und Rightsizing-Modelle.">Disegno di modelli organizzativi e di governance, evoluzione dei modelli operativi, analisi quali-quantitativa del dimensionamento e definizione dei modelli di rightsizing.</p>
+      <p class="evlab" data-en="The evidence" data-de="Der Beleg">L'evidenza</p>
+      <ul>
+        <li data-en="A holding with eight operating companies, designed so each activity reaches the instrument matched to it" data-de="Eine Holding mit acht operativen Gesellschaften, so entworfen, dass jede Tätigkeit das passende Instrument erreicht">Una holding con otto società operative, progettata perché ciascuna attività acceda allo strumento adatto alla propria natura</li>
+        <li data-en="Costs and incentives allocated per entity, intercompany transfer pricing analysed, a corporate conversion planned over five to ten years" data-de="Kosten und Förderungen je Einheit zugeordnet, Verrechnungspreise analysiert, Umwandlung über fünf bis zehn Jahre geplant">Costi e agevolazioni allocati per entità, prezzi di trasferimento infragruppo analizzati, conversione societaria pianificata su cinque-dieci anni</li>
+      </ul>
+    </article>
+    <article class="rcard">
+      <h3 data-en="PMO and digital transformation" data-de="PMO und digitale Transformation">PMO e trasformazione digitale</h3>
+      <p data-en="Roadmap and prioritisation with forecast economic impact, end-to-end governance of complex programmes, project risk management, as-is assessment and to-be model definition." data-de="Roadmap und Priorisierung mit prognostizierter Wirkung, durchgängige Governance komplexer Programme, Projektrisikosteuerung, As-is-Analyse und To-be-Modell.">Roadmap e prioritizzazione con impatto economico previsto, governance end-to-end di programmi complessi, gestione dei rischi di progetto, assessment as-is e definizione del modello to-be.</p>
+      <p class="evlab" data-en="The evidence" data-de="Der Beleg">L'evidenza</p>
+      <ul>
+        <li data-en="Two-stage build option quantified separately: Year 0 capex from €23.0M to €19.3M, deferring €3.7M and funding it from revenue" data-de="Zweistufige Bauoption gesondert quantifiziert: Capex im Jahr 0 von 23,0 auf 19,3 Mio. €, 3,7 Mio. € verschoben und aus dem Umsatz finanziert">Opzione di costruzione in due fasi quantificata a parte: capex dell'Anno 0 da €23,0M a €19,3M, differendo €3,7M e autofinanziandolo dai ricavi</li>
+        <li data-en="Risks documented and quantified: a 13-month lag between completion and receipt, a €3.31M peak cash need, a contract expiring at the Year 10 exit" data-de="Risiken dokumentiert und quantifiziert: 13 Monate Verzug zwischen Fertigstellung und Zufluss, Spitzenbedarf 3,31 Mio. €, Vertragsablauf zum Exit im Jahr 10">Rischi documentati e quantificati: sfasamento di 13 mesi fra completamento e incasso, picco di fabbisogno di €3,31M, scadenza contrattuale all'uscita dell'Anno 10</li>
+      </ul>
+    </article>
+    <article class="rcard">
+      <h3 data-en="Change management and adoption" data-de="Change Management und Adoption">Change management e adoption</h3>
+      <p data-en="Requirements gathered and formalised before the target process, co-design sessions through design thinking, Lean Startup and Jobs-to-Be-Done, management of internal and external stakeholders." data-de="Anforderungen erhoben und formalisiert vor dem Zielprozess, Co-Design-Sitzungen mit Design Thinking, Lean Startup und Jobs-to-Be-Done, Steuerung interner und externer Stakeholder.">Raccolta e formalizzazione dei requisiti prima del processo target, sessioni di co-design con metodologie di design thinking, Lean Startup e Jobs-to-Be-Done, gestione di stakeholder interni ed esterni.</p>
+      <p class="evlab" data-en="The evidence" data-de="Der Beleg">L'evidenza</p>
+      <ul>
+        <li data-en="Three sites, eight companies, two municipalities, a regional authority, landowning families and a public-private partnership structure, held together in one plan" data-de="Drei Standorte, acht Gesellschaften, zwei Kommunen, eine Region, Grundeigentümerfamilien und eine ÖPP-Struktur, in einem Plan zusammengeführt">Tre siti, otto società, due Comuni, una Regione, famiglie proprietarie dei terreni e una struttura di partenariato pubblico-privato, tenuti insieme in un solo piano</li>
+        <li data-en="A platform pivot run as customer development, with qualitative findings gathered locally and folded into the quantitative model" data-de="Ein Plattform-Pivot als Customer Development, mit vor Ort erhobenen qualitativen Befunden, eingebaut ins quantitative Modell">Il pivot di una piattaforma condotto come customer development, con le analisi qualitative raccolte sul territorio e integrate nel modello quantitativo</li>
+      </ul>
+    </article>
+    <article class="rcard">
+      <h3 data-en="Public funding, grants and tenders" data-de="Fördermittel, Anträge und Ausschreibungen">Finanza agevolata, bandi e gare</h3>
+      <p data-en="Mapping of Italian and EU incentive instruments, verification of actual utilisation at source, business plans in support of the application, preparation of tenders, commercial proposals and points of view." data-de="Kartierung italienischer und EU-Förderinstrumente, Prüfung der tatsächlichen Inanspruchnahme an der Quelle, Businesspläne zur Untermauerung des Antrags, Erstellung von Ausschreibungen, Angeboten und Points of View.">Mappatura degli strumenti agevolativi nazionali ed europei, verifica alla fonte della fruizione effettiva, business plan a sostegno della domanda, preparazione di gare, proposte commerciali e POV.</p>
+      <p class="evlab" data-en="The evidence" data-de="Der Beleg">L'evidenza</p>
+      <ul>
+        <li data-en="The ZES Unica incentive verified at source on the actual utilisation percentage, revising the projected benefit by roughly €3M while the document was still in progress" data-de="Die Förderung ZES Unica an der Quelle auf den tatsächlichen Inanspruchnahmesatz geprüft, Wirkung um rund 3 Mio. € korrigiert, während das Dokument noch in Arbeit war">L'agevolazione ZES Unica verificata alla fonte sulla percentuale di fruizione effettiva, con l'impatto previsto rettificato di circa €3 milioni mentre il documento era ancora in lavorazione</li>
+        <li data-en="Italian and EU instruments mapped across eight entities, and the incentive process rebuilt after the verification" data-de="Italienische und EU-Instrumente über acht Einheiten kartiert, der Förderprozess nach der Prüfung neu aufgebaut">Strumenti nazionali ed europei mappati su otto entità, e il processo degli incentivi ricostruito dopo la verifica</li>
+      </ul>
+    </article>
+    <article class="rcard">
+      <h3 data-en="Strategy consulting — SMEs and public sector" data-de="Strategieberatung — KMU und öffentlicher Sektor">Consulenza strategica PMI e PA</h3>
+      <p data-en="Feasibility studies, market sizing, competitive analysis, ten-year financial modelling with IRR, exit multiples and sensitivity analysis, through to investor-standard documentation." data-de="Machbarkeitsstudien, Marktdimensionierung, Wettbewerbsanalyse, Zehnjahres-Finanzmodellierung mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse bis hin zu Unterlagen auf Investorenniveau.">Studi di fattibilità, market sizing, analisi competitiva, modellazione finanziaria a dieci anni con IRR, multipli di uscita e analisi di sensitività, fino alla documentazione a standard investitori.</p>
+      <p class="evlab" data-en="The evidence" data-de="Der Beleg">L'evidenza</p>
+      <ul>
+        <li data-en="A ten-year model with sensitivity across build cost, fixed cost, occupancy, average rate and exit multiple" data-de="Zehnjahresmodell mit Sensitivität über Baukosten, Fixkosten, Auslastung, Durchschnittsrate und Exit-Multiplikator">Modello a dieci anni con sensitività su costo di costruzione, costi fissi, occupazione, tariffa media e multiplo di uscita</li>
+        <li data-en="Documentation produced in Italian, English and German, to the same standard" data-de="Unterlagen in Italienisch, Englisch und Deutsch, auf demselben Niveau">Documentazione prodotta in italiano, inglese e tedesco, allo stesso standard</li>
+      </ul>
+    </article>
+  </div>
+</section>
+ 
+<section>
+  <h2 class="st" data-en="The case that holds the five areas together" data-de="Der Fall, der die fünf Bereiche zusammenhält">Il caso che tiene insieme i cinque ambiti</h2>
+  <div class="why">
+    <p data-en="A multi-site hospitality group in <b>Basilicata, 2026</b>. A holding with eight operating companies; a ten-year model with IRR, exit multiples and sensitivity analysis; a mapping of Italian and EU incentive instruments. The sizing shows how much fixed estate the project genuinely carries, and the scope is rebuilt accordingly, with the coastal site reconfigured as public infrastructure under a partnership." data-de="Eine Hotelgruppe mit mehreren Standorten in <b>Basilikata, 2026</b>. Eine Holding mit acht operativen Gesellschaften; ein Zehnjahresmodell mit IRR, Exit-Multiplikatoren und Sensitivitätsanalyse; eine Kartierung italienischer und europäischer Förderinstrumente. Die Dimensionierung zeigt, wie viel Fixkostenstruktur das Projekt wirklich trägt, und der Umfang wird entsprechend neu gebaut, mit dem Küstenstandort als öffentliche Infrastruktur in Partnerschaft.">Un gruppo ricettivo multi-sito in <b>Basilicata, 2026</b>. Una holding con otto società operative; un modello a dieci anni con IRR, multipli di uscita e analisi di sensitività; una mappatura degli strumenti agevolativi nazionali ed europei. Il dimensionamento mostra quanta struttura fissa il progetto regge davvero, e il perimetro viene ricostruito di conseguenza, con il sito costiero riconfigurato come infrastruttura pubblica in partenariato.</p>
+    <p data-en="And the ZES Unica incentive is verified at source, on the actual utilisation percentage, with the projected benefit revised by roughly three million <b>while the document was still in progress</b>. That is the part worth most inside a consulting team: a headline assumption found, corrected and reported before it reached an investor." data-de="Und die Förderung ZES Unica wird an der Quelle geprüft, auf den tatsächlichen Inanspruchnahmesatz, und die prognostizierte Wirkung um rund drei Millionen korrigiert, <b>während das Dokument noch in Arbeit war</b>. Das ist der Teil, der in einem Beratungsteam am meisten wert ist: eine nominale Annahme, gefunden, korrigiert und gemeldet, bevor sie einen Investor erreichte.">E l'agevolazione ZES Unica viene verificata alla fonte, sulla percentuale di fruizione effettiva, con l'impatto previsto rettificato di circa tre milioni <b>mentre il documento era ancora in lavorazione</b>. È il punto che vale di più in un team di consulenza: un'assunzione nominale individuata, corretta e segnalata prima che arrivasse a un investitore.</p>
+  </div>
+</section>
+ 
+<section>
+  <h2 class="st" data-en="The figures" data-de="Die Zahlen">Le cifre</h2>
+  <p class="sdesc" data-en="Each returned to its exact meaning in the Precision section of the Skills Triage: what it measures, and on what." data-de="Jede im Abschnitt Präzision der Skills Triage auf ihre genaue Bedeutung zurückgeführt: was sie misst, und woran.">Ciascuna riportata al suo significato esatto nella sezione Precisione della Skills Triage: cosa misura, e su cosa.</p>
+  <div class="evs">
+    <div class="ev"><b>~€3M</b><span data-en="revision to a projected incentive benefit, after verification at source" data-de="Korrektur einer prognostizierten Förderwirkung nach Prüfung an der Quelle">rettifica di un beneficio agevolativo previsto, dopo verifica alla fonte</span></div>
+    <div class="ev"><b>8+1</b><span data-en="operating companies under a holding, structure designed in 2026" data-de="operative Gesellschaften unter einer Holding, Struktur 2026 entworfen">società operative sotto una holding, struttura disegnata nel 2026</span></div>
+    <div class="ev"><b data-en="10 years" data-de="10 Jahre">10 anni</b><span data-en="cash-flow model horizon, with IRR and sensitivity" data-de="Horizont des Cashflow-Modells, mit IRR und Sensitivität">orizzonte del modello di cash flow, con IRR e sensitività</span></div>
+    <div class="ev"><b>€5M–€500M</b><span data-en="notional of a single institutional order, government bonds, 2001–2006" data-de="Nominal einer einzelnen institutionellen Order, Staatsanleihen, 2001–2006">nozionale del singolo ordine istituzionale, titoli di Stato, 2001–2006</span></div>
+    <div class="ev"><b data-en="1,000+" data-de="1.000+">1.000+</b><span data-en="pages on the European Banking Union, fully footnoted" data-de="Seiten zur Europäischen Bankenunion, mit vollständigem Fußnotenapparat">pagine sull'Unione bancaria europea, con apparato di note completo</span></div>
+    <div class="ev"><b>400</b><span data-en="products designed and an entire e-commerce site, built with my own hands" data-de="entworfene Produkte und eine komplette E-Commerce-Site, eigenhändig gebaut">prodotti disegnati e un intero sito e-commerce, costruiti di mia mano</span></div>
+  </div>
+</section>
+ 
+<section>
+  <h2 class="st" data-en="How I work, and from when" data-de="Wie ich arbeite, und ab wann">Come lavoro, e da quando</h2>
+  <p class="sdesc" data-en="Available from 1 April 2027, resident in the province of Matera: Bari, Potenza, Taranto and Naples are within daily reach, Rome within weekly reach, and travel is part of the job. Native Italian and German, English C1 matured at Allen &amp;amp; Overy LLP and Tullett Prebon: documentation comes out to the same standard in all three languages, which matters for a client with a German parent or an international investor. Behind the models sits the accounting training — SAP ERP FI/CO 100/100 con lode, DATEV and Lexware — which is why a ten-year plan starts from the accounts: I know where the figures come from, how they were posted, and where they break." data-de="Verfügbar ab 1. April 2027, mit Wohnsitz in der Provinz Matera: Bari, Potenza, Tarent und Neapel liegen im Tagesradius, Rom im Wochenradius, und Reisetätigkeit gehört zum Beruf. Italienisch und Deutsch Muttersprache, Englisch C1, erworben bei Allen &amp;amp; Overy LLP und Tullett Prebon: Unterlagen entstehen in allen drei Sprachen auf demselben Niveau, was für einen Kunden mit deutscher Muttergesellschaft oder einen internationalen Investor zählt. Hinter den Modellen steht die Ausbildung im Rechnungswesen — SAP ERP FI/CO 100/100 mit Auszeichnung, DATEV und Lexware — weshalb ein Zehnjahresplan bei der Bilanz beginnt: Ich weiß, woher die Zahlen kommen, wie sie gebucht wurden und wo sie brechen.">Disponibile dal 1° aprile 2027, con residenza in provincia di Matera: Bari, Potenza, Taranto e Napoli sono nel raggio quotidiano, Roma nel raggio settimanale, e la trasferta è parte del mestiere. Italiano e tedesco madrelingua, inglese C1 maturato in Allen &amp; Overy LLP e in Tullett Prebon: la documentazione esce allo stesso standard in tutte e tre le lingue, il che conta per un cliente con una casa madre tedesca o un investitore internazionale. Dietro i modelli c'è la formazione contabile — SAP ERP FI/CO 100/100 con lode, DATEV e Lexware — che è la ragione per cui un piano a dieci anni parte dal bilancio: so da dove vengono i numeri, come sono stati registrati e dove si rompono.</p>
+</section>
+ 
+<section>
+  <h2 class="st" data-en="Four questions" data-de="Vier Fragen">Quattro domande</h2>
+  <p class="sdesc" data-en="So the first conversation starts on the substance, with the practical matters already settled." data-de="Damit das erste Gespräch beim Inhalt beginnt, mit bereits geklärten praktischen Fragen.">Perché il primo colloquio parta dal merito, con le cose pratiche già chiarite.</p>
+  <ol class="qs">
+    <li data-en="What form of contract and what grade do you foresee for an experienced appointment?" data-de="Welche Vertragsform und welche Stufe sehen Sie für eine erfahrene Besetzung vor?">Quale forma contrattuale e quale livello prevedete per un inserimento esperienziato?</li>
+    <li data-en="What is the salary range for that grade?" data-de="Welche Gehaltsspanne gilt für diese Stufe?">Qual è il range retributivo previsto per quel livello?</li>
+    <li data-en="How many days a week on site are expected, and how much travel?" data-de="Wie viele Präsenztage pro Woche sind vorgesehen, und wie viel Reisetätigkeit?">Quanti giorni di presenza settimanale sono attesi, e quanta trasferta?</li>
+    <li data-en="Which office would be the base?" data-de="Welcher Standort wäre der Dienstsitz?">Quale sarebbe la sede di riferimento?</li>
+  </ol>
+</section>
+ 
+<div class="close">
+  <p data-en="The work sample is available on request: the Basilicata feasibility case study — corporate structure, financial model and assumptions, sensitivity analysis and the incentive-verification note. It is the document against which everything on this page can be measured." data-de="Die Arbeitsprobe ist auf Anfrage verfügbar: die Machbarkeits-Fallstudie Basilikata — Gesellschaftsstruktur, Finanzmodell und Annahmen, Sensitivitätsanalyse und die Notiz zur Förderprüfung. An diesem Dokument lässt sich alles messen, was auf dieser Seite steht.">Il campione di lavoro è disponibile su richiesta: il case study di fattibilità Basilicata — struttura societaria, modello finanziario e assunzioni, analisi di sensitività e nota di verifica dell'agevolazione. È il documento su cui misurare tutto quello che sta in questa pagina.</p>
+  <p data-en="The Skills Triage and the curriculum vitae are at the two pages linked above. For a conversation, exploratory if you prefer: maricla@mboss.us." data-de="Skills Triage und Lebenslauf finden Sie auf den beiden oben verlinkten Seiten. Für ein Gespräch, auch ein erstes Kennenlernen: maricla@mboss.us.">Skills Triage e curriculum vitae sono alle due pagine collegate qui sopra. Per un colloquio, anche solo conoscitivo: maricla@mboss.us.</p>
+</div>
+ 
+</div>
+ 
+<footer><div class="wrap">
+  <p><b>Maricla Martelli Kandzorra</b> · <a href="mailto:maricla@mboss.us">maricla@mboss.us</a> · <a href="https://www.linkedin.com/in/maricla-martelli-kandzorra">linkedin.com/in/maricla-martelli-kandzorra</a></p>
+  <p><a href="skill-triage.html">Skills Triage</a> · <a href="curriculum-vitae.html">Curriculum vitae</a></p>
+</div></footer>
+ 
+<script>
+(function(){
+  var nodes=document.querySelectorAll('[data-en]');
+  nodes.forEach(function(n){ n.setAttribute('data-it', n.innerHTML); });
+  var B={it:document.getElementById('bIT'),en:document.getElementById('bEN'),de:document.getElementById('bDE')};
+  function setLang(l){
+    nodes.forEach(function(n){ n.innerHTML = n.getAttribute('data-'+l) || n.getAttribute('data-it'); });
+    document.documentElement.lang = l;
+    for(var k in B){ B[k].setAttribute('aria-pressed', k===l); }
+    try{ localStorage.setItem('mmk-lang', l); }catch(e){}
+  }
+  for(var k in B){ (function(kk){ B[kk].addEventListener('click', function(){ setLang(kk); }); })(k); }
+  try{ var s=localStorage.getItem('mmk-lang'); if(s==='en'||s==='de') setLang(s); }catch(e){}
+})();
+</script>
+</body>
+</html>
